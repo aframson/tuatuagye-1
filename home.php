@@ -215,7 +215,7 @@
                         <div class="col-lg-5">
                             <span style="color: rgb(42, 151, 153);">Tuatuagye</span>
                             <h6 style ="color:white">Super fast Delivery</h2>
-                                    <br>
+                      
                             <a href="./product.php" class="primary-btn" style="background-color: rgb(42, 151, 153);">Shop Now</a>
                         </div>
                     </div>
@@ -228,7 +228,6 @@
                         <div class="col-lg-5">
                            <span style="color: rgb(42, 151, 153);">Tuatuagye</span>
                             <h6 style ="color:white">Super fast Delivery</h2>
-                                    <br>
                          
                             <a href="./product.php" class="primary-btn" style="background-color: rgb(42, 151, 153);">Shop Now</a>
                         </div>
@@ -242,7 +241,6 @@
                         <div class="col-lg-5">
                            <span style="color: rgb(42, 151, 153);">Tuatuagye</span>
                             <h6 style ="color:black">Super fast Delivery</h2>
-                                    <br>
                         
                             <a href="./product.php" class="primary-btn" style="background-color: rgb(42, 151, 153);">Shop Now</a>
                         </div>
@@ -256,7 +254,6 @@
                         <div class="col-lg-5">
                            <span style="color: rgb(42, 151, 153);">Tuatuagye</span>
                             <h6 style ="color:black">Super fast Delivery</h2>
-                                    <br>
                    
                             <a href="./product.php" class="primary-btn" style="background-color: rgb(42, 151, 153);">Shop Now</a>
                         </div>
@@ -270,7 +267,6 @@
                         <div class="col-lg-5">
                            <span style="color: rgb(42, 151, 153);">Tuatuagye</span>
                             <h6 style ="color:black">Super fast Delivery</h6>
-                                    <br>
                    
                             <a href="./product.php" class="primary-btn" style="background-color: rgb(42, 151, 153);">Shop Now</a>
                         </div>
@@ -284,7 +280,6 @@
                         <div class="col-lg-5">
                            <span style="color: rgb(42, 151, 153);">Tuatuagye</span>
                             <h6 style ="color:white">Super fast Delivery</h6>
-                                    <br>
                        
                             <a href="./product.php" class="primary-btn" style="background-color: rgb(42, 151, 153);">Shop Now</a>
                         </div>
@@ -742,9 +737,9 @@
 
 
     <!-- Deal Of The Week Section Begin-->
-    <section class="deal-of-week set-bg spad">
+    <section class="deal-of-week set-bg spad" data-setbg="img/Main_Banner_TTG_01_laptops.jpg" >
         <div class="container">
-            <div class="col-lg-6 text-center" style=' background-image: url('img/Main_Banner_TTG_01_laptops.jpg') ''>
+            <div class="col-lg-6 text-center">
                 <div class="section-title">
                     <h2>Deal Of The Week</h2>
                     <p> We've thought about using an online auction for years so glad we decided to give it a try.
