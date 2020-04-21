@@ -1,0 +1,4 @@
+[21-Apr-2020 06:59:55 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in /home/vxkgn0fmfwww/public_html/tuatuagye.com/Source/resources/products/product.php on line 242
+[21-Apr-2020 06:59:55 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in /home/vxkgn0fmfwww/public_html/tuatuagye.com/Source/resources/products/product.php on line 245
+[21-Apr-2020 07:01:00 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in /home/vxkgn0fmfwww/public_html/tuatuagye.com/Source/resources/products/product.php on line 242
+[21-Apr-2020 07:01:00 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in /home/vxkgn0fmfwww/public_html/tuatuagye.com/Source/resources/products/product.php on line 245

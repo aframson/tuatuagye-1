@@ -1,0 +1,1018 @@
+    html, body{
+        background-color: #f5f5f5;
+    }
+
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**********************************************************
+              flex display cart brich coin wish list area
+/**********************************************************/
+
+/*@media(min-width:468px){    */
+.container-15{
+      display:flex;
+
+    }
+  .flexiblebox-1{
+    flex:1;  /*2 makes the display auto wider*/
+    order:2;
+  }
+
+  .flexiblebox-2{
+    flex:1;
+    order:1;  /*2 position of the block in the flex container*/
+  }
+
+  .flexiblebox-3{
+    flex:1;
+    order: 3;
+  }
+
+
+                 div.modal-content {
+                            width: 200%;
+
+                        }
+
+div.header-logo a.logo1 img {
+    max-width: 50px;
+    margin-top: 15px;
+}
+
+
+/**********************************************************
+               add to cart pages following section
+/**********************************************************/
+
+           .page-container-1{
+               margin-top: 40px;
+      display:flex;
+      flex-direction:column;
+      align-items:flex-start;
+       justify-content:space-between;
+      /*
+
+      align-items:flex-end;
+      align-items:center;
+
+
+      */
+    }
+  .page-container-1 div{
+   /* border:1px #ccc solid;  **/
+    padding:10px;
+  }
+
+          .page-1{
+                 margin-top: 40px;
+       background-color: white;
+
+    flex:1;  /*2 makes the display auto wider*/
+    order:2;
+  }
+
+  .page-2{
+                   margin-top: 40px;
+       background-color: white;
+    flex:1;
+    order:1;  /*2 position of the block in the flex container*/
+  }
+
+  .page-3{
+                   margin-top: 40px;
+       background-color: white;
+    flex:1;
+    order: 3;
+  }
+
+           .page-4{
+                            margin-top: 40px;
+       background-color: white;
+    flex:1;  /*2 makes the display auto wider*/
+    order:4;
+  }
+
+  .page-5{
+                   margin-top: 40px;
+       background-color: white;
+    flex:1;
+    order:5;  /*2 position of the block in the flex container*/
+  }
+
+  .page-6{
+    flex:1;
+    order: 6;
+  }
+
+
+  /**********************************************************
+               footer flexbox
+/**********************************************************/
+        .footer-flex{
+
+               margin-top: 40px;
+      display:flex;
+      flex-direction:column;
+      align-items:flex-start;
+       justify-content:space-between;
+        }
+
+          .flex-1{
+                   margin-top: 40px;
+    flex:1;
+    order:1;  /*2 position of the block in the flex container*/
+  }
+
+  .flex-2{
+                        margin-top: 40px;
+       background-color: white;
+    flex:1;
+    order: 2;
+  }
+
+  .row{
+      display:flex;
+      align-items:flex-start;
+       justify-content:space-between;
+       width: 100%
+       /*
+  align-items:flex-start;
+      align-items:flex-end;
+      align-items:center;
+      justify-content:space-around;
+       */
+  }
+
+  .flex_box1{
+ align-items:flex-end;
+      justify-content:space-around;
+       flex-direction:column;
+
+  }
+    .flex_box4{
+ align-items:flex-start;
+      justify-content:space-around;
+       flex-direction:column;
+  }
+
+  .footer-left .footer-social a:hover :after {
+  background-color: rgb(42, 151, 153);
+  content: "";
+}
+  .footer-left ul li{
+
+      color: white;
+  } .newslatter-item p{
+      color: white;
+  }
+  .newslatter-item .subscribe-form input{
+      background: white;
+  }
+    .newslatter-item .subscribe-form button{
+      background: rgb(42, 151, 153);
+      border: 1px solid rgb(42, 151, 153);
+  }
+   .footer-widget ul li a{
+        color: rgb(42, 151, 153);
+    }
+  .footer-logo{ position: relative; left: 75px; max-width: 70px; margin: 19px;}
+
+      @media(max-width: 991px){
+  .footer-logo{   position: relative;
+    left: 405px;
+    max-width: 80px;
+  }
+}
+    @media(max-width: 779px){
+  .footer-logo{  max-width: 70px; margin: 14px;
+
+    left: 331px;
+  }
+}
+   @media(max-width: 560px){
+  .footer-logo{  max-width: 60px; margin: 14px;
+    margin-top: -46px;
+      position: relative;
+
+    left: 156px;
+    vertical-align: middle;
+
+
+  }
+
+   }
+  @media(max-width: 350px){
+  .footer-logo{  max-width: 50px; margin: 14px;
+    margin-top: -46px;
+    margin-left: -31px;
+    vertical-align: middle;
+
+
+  }
+
+}
+/**********************************************************
+               search bar area navbar wishlist brich coin
+/**********************************************************/
+       div .col-md-3.myadd.clearfix{
+                position: relative;
+        left: -89px;
+         margin-top: 11px;
+       }
+/*
+
+this is to make the input for the search more cool
+input {
+	outline: none;
+	border: none;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+
+*/
+             div.search-btn form.navbar-form{
+             width: 360px;
+             margin-top: 2px;
+             position: relative;
+             left: -40px;
+             padding: 20px;
+             }
+              div.search-btn form.navbar-form input{
+              box-shadow:  1px 3px  #888888;
+             border-radius: 30px 1px  1px 30px;
+
+
+                 }
+                 div.search-btn form.navbar-form button {
+
+               position: relative;
+             left: -19px;
+              margin-top: -1px;
+              background: rgb(42, 151, 153);
+
+        }
+ div.search-btn form.navbar-form button .btn-just-icon {
+     font-size: 50px;
+ }
+
+
+        input#input_search.input{
+             width: 300px;
+             border-radius: 30px 1px  1px 30px;
+             margin-top: 11px;
+             position: relative;
+             left: -40px;
+             padding: 20px;
+             }
+         button.search-btn{
+               position: relative;
+             left: -40px;
+        }
+
+
+        div.modal-content{  margin: auto;   }
+
+
+
+
+
+/**********************************************************
+                 //alibaba navbar header
+/**********************************************************/
+
+
+               a   i.ng-wishlist-icon.ng-icon-size{
+                   /* visibility: hidden ;  */
+                   position: relative;
+                       margin-top:  11;
+               }
+
+    .flyout-user-signIn a.sign-btn {
+    background-color: #FFF1F1;
+    color: rgb(42, 151, 153);
+    }
+    .flyout-user-signIn a.sign-btn:hover{
+        background-color: rgb(42, 151, 153);
+        color:white;
+
+    }
+
+
+.flyout-user-signIn a.join-btn:hover {
+    background-color: #FFF1F1;
+    color: rgb(42, 151, 153);
+}
+div.ng-item.ng-help.ng-sub span.ng-sub-title:hover{
+    color:  rgb(42, 151, 153);
+
+}
+
+div.nav-global .ng-mobile a::before{
+   /* color:  rgb(42, 151, 153);  */
+   color: green;
+
+}
+div.nav-global .ng-mobile a:hover{
+    color:  rgb(42, 151, 153);
+}
+.nav-global:hover{
+    color:  rgb(42, 151, 153);
+}
+.nav-global .nav-wishlist .text:hover{
+    color:  rgb(42, 151, 153);
+}
+
+.nav-user-account .user-account-port .text:hover{
+    color:  rgb(42, 151, 153);
+}
+/*
+div:hover:before:hover{
+
+}
+*/
+div.nav-global .ng-mobile a::before{
+    color:  rgb(42, 151, 153);
+}
+
+
+.slick-initialized .slick-slide {
+    display: block;
+}
+.slick-slide {
+    display: none;
+    float: left;
+    height: 60%;
+    min-height: 1px;
+}
+
+
+             a.btn.btn-outline-primary.float.right:hover{
+                            color: white;
+                            background-color:  rgb(42, 151, 153);
+                        }
+
+
+
+                                    button.close span{
+
+                                right: 0; margin-top: -19px;
+                                position: fixed;
+                                float: right;
+                                font-size: 2.3rem;
+                                font-weight: 700;
+                                line-height: 1;
+                                z-index: 20000;
+
+                                color: #000;
+                                text-shadow: 0 1px 0 #fff;
+                                opacity: .5;
+                                }
+
+
+/******************
+ //chat bot
+/******************/
+
+ body {font-family: Arial, Helvetica, sans-serif;}
+    * {box-sizing: border-box;}
+
+    /* Button used to open the chat form - fixed at the bottom of the page */
+    .open-button {
+      background-color: rgb(42, 151, 153);
+      color: white;
+      padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+      opacity: 0.8;
+      position: fixed;
+      bottom: 23px;
+      right: 15px;
+      width: 240px;
+      border-radius: 10px;
+      z-index: 3000;
+
+    }
+
+    /* The popup chat - hidden by default */
+    .chat-popup {
+        background-image: url(img/bg.png);
+      display: none;
+      position: fixed;
+      bottom: 0;
+      right: 15px;
+      border: 3px solid #f1f1f1;
+      z-index: 90000;
+      border-radius: 20px 20px 10px 1px;
+    }
+
+    form#chatmessage.form-container label{
+        color: rgb(42, 151, 173);
+        font-size: 1.3rem;
+
+    }
+    form#chatmessage.form-container h3{
+        color:  rgb(42, 151, 163);
+    }
+
+    /* Add styles to the form container */
+    .form-container {
+      max-width: 300px;
+      padding: 10px;
+      background-color: white;
+      height: 350px;
+    margin-bottom: 0px;
+    border-radius: 20px 20px 1px 1px;
+
+    }
+
+    /* Full-width textarea */
+    .form-container textarea {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      border: none;
+      background: #f1f1f1;
+      resize: none;
+      min-height: 120px;
+      margin-bottom: 80px;
+      z-index: 3000;
+
+    }
+
+    /* When the textarea gets focus, do something */
+    .form-container textarea:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+
+    /* Set a style for the submit/send button */
+    .form-container .btn {
+      background-color: white;
+      color: rgb(42, 151, 153);
+      padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+      width: 138px;
+      margin-bottom:10px;
+      opacity: 0.8;
+      border-radius: 5px;
+      z-index: 3000;
+      font-size: 1.3rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+    height: 2.7em;
+    }
+
+    /* Add a red background color to the cancel button */
+    .form-container .cancel {
+      background-color: rgb(42, 151, 153);
+      color: white;
+      z-index: 3000;
+      width: 138px;
+      margin-bottom: 10px;
+    height: 2.7em;
+    }
+
+    /* Add some hover effects to buttons */
+    .form-container .btn:hover, .open-button:hover {
+      opacity: 1;
+    }
+
+
+
+    /**********************************************************
+               media queries
+/**********************************************************/
+
+
+      @media  only screen and (max-width: 991px) {
+                input#input_search.input{
+                         width: 200px;
+                         border-radius: 30px 1px  1px 30px;
+
+                                    }
+                a   i.ng-wishlist-icon.ng-icon-size{
+
+                       margin-top: 11;
+               }
+
+    }
+
+
+   @media  only screen and (max-width: 768px) {
+
+
+
+
+                        div div.header-search {
+                                    position: relative;
+                                    left: 19;
+                                      }
+
+
+     }
+                        @media(min-width: 701px){
+                            .mobile{
+                                visibility: hidden;
+                                position: absolute;
+                            }
+                        }
+
+
+                    /* @media  only screen and (min-device-width: 491px) and (max-device-width: 640px)  {
+                          /* For portrait layouts only //and (orientation:portrait) */
+                        @media(min-width: 591px){
+                            div .header-search form{
+                                width: 160px;
+                                border-radius: 30px 1px  1px 30px;
+                                margin-top: -50px;
+                                 margin-left: 34px;
+                                    }
+
+
+
+                      }
+
+
+                      @media  only screen and (max-width: 579px) {
+                         div .header.d-flex{
+                                height: 138px;
+
+                            }
+                        .mobile{
+                            display: flex;
+                            position: absolute;
+
+                        }
+                        div .btn-group{
+                            flex: 1;
+                            order: 1;
+                                  align-items:flex-start;
+                            margin-top: 20px;
+                            margin-left: 50px;
+
+
+                        }
+
+                        div  #dropdownId i.material-icons {
+                                    border-radius: 10px 10px  10px 10px;
+                                    font-size: 34px;
+
+
+                        }
+                        div .dropdown-menu ::after{
+                                margin-right: 40px;
+                                margin-top: 10px;
+                                content: "";
+                        }
+                        .site-mobile-menu-logo{
+                            max-width: 40px;
+                            margin-top: 20px;
+                            margin-right: 80px;
+                            flex:1;
+                            order: 2;
+                            align-items:flex-end;
+                        }
+                          .myadd {
+                              visibility: hidden;
+                          }
+                             /*search input*/
+                        input#input_search.input{
+                                width: 270px;
+                                border-radius: 30px 1px  1px 30px;
+                                margin-top: -6px;
+                                    position: relative;
+                                    }
+
+
+                   div div.header-search {
+                                    position: relative;
+                                    left: 99px;
+                                    margin-top: 51px;   }
+
+
+               a   i.ng-wishlist-icon.ng-icon-size{
+                   /* visibility: hidden ;  */
+                    position: relative;
+                       margin-top: -11;
+               }
+
+                                    div.header-ctn div.wish{
+                                     position: absolute;
+                                     left: 1;
+                                     top: 32;
+                                    }
+
+
+
+
+
+
+                             /*logo*/
+                        div.header-logo a.logo1 img {
+
+                            display: none;
+                            }
+                            div.header-ctn div.wish{
+                                display: none;
+                            }
+                            div.header-ctn div.dropdown{
+                                display: none;
+                            }
+                            [class*='col-xs'] {
+                                width: 100%;
+                               height: 35%;
+                        }
+                        h3.section-title{
+                            margin-top: 100px;
+                            color:  rgb(42, 151, 153);
+                            font-weight: 200px;
+                        }
+
+
+
+                    }
+
+
+        @media  only screen and (max-width: 430px) {
+
+                       div div.header-search {
+                                    position: relative;
+                                    left: 59px;
+                                    margin-top: 51px;
+                                height: 28px;
+
+                                      }
+                    input#input_search.input{
+                                width: 181px;
+                                top: 5px;
+                                left: -4px;
+                                box-shadow: 5px 10px grey;
+                            }
+                            button.search-btn{
+                                top:5px;
+                                left: 138px;
+                                width: 65px;
+                            }
+                               div .btn-group{
+                                    position: relative;
+                            margin-top: 20px;
+                            margin-left: 90px;  }
+
+
+        }
+       @media  only screen and (max-width: 330px) {
+
+                       div div.header-search {
+                                    position: relative;
+                                    left: 49;
+                                    margin-top: 51px;
+                                      }
+                                       input#input_search.input{
+                                width: 130px;
+                                            position: relative;
+                                       }
+                                   div .btn-group{
+
+                            margin-top: 20px;
+                            margin-left: 50px;
+
+                                   }
+
+                             .site-mobile-menu-logo{
+
+                            margin-right: 70px;
+
+                             }
+
+       }
+
+
+
+
+
+/**********************************************************
+             bootstrap nav bar
+/**********************************************************/
+
+
+nav.site-header.sticky-top.py-1.bootstrap-nav{
+      margin-top: 78px;
+background: rgb(42, 151, 153);
+    font-size: 19px;
+
+
+
+}
+
+
+nav.site-header.sticky-top.py-1.bootstrap-nav a{
+    color: white;
+}
+/**********************************************************
+                    section
+/**********************************************************/
+  div.container div.section{
+    /*display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;*/
+    margin-top: 120px;
+  }
+/**********************************************************
+                    hero img 
+/**********************************************************/
+
+.hero-items .single-hero-items{
+    height: 625px;
+
+}
+.col-lg-4 .single-banner{
+height: 200px;
+
+}
+.single-banner img{
+    width: 100%;
+  height: 100%;
+  object-fit: contain;
+  
+}
+.single-banner .inner-text h4 {
+
+background: rgb(42, 151, 153); 
+color: white;
+}
+
+  /**********************************************************
+                product slider img
+/**********************************************************/
+
+div .product-item div.pi-pic{
+    width: 258px;
+    height: 315px;
+} 
+
+  /**********************************************************
+                product buy 
+/**********************************************************/
+.addborder{
+    display: block;
+     box-shadow: 5px 5px 5px 5px grey;
+
+}
+.product-item div{text-align:center;	margin:10px;}
+  /**********************************************************
+                    Deal of the week
+/**********************************************************/
+    section.deal-of-week.set-bg.spad {
+            background: white;
+    }
+
+    .section-title .product-price{
+
+        color: rgb(42, 151, 153); 
+    }
+
+    a .btn-primary{
+        background-color: rgb(42, 151, 153); 
+        color: white;
+    }
+  /**********************************************************
+                  grid
+/**********************************************************/
+    .bad-wrapper{
+      display:grid;
+      grid-template-columns:1fr 2fr 1fr;
+      grid-auto-rows:minmax(100px, auto);
+      grid-gap:1em;
+      justify-items:stretch;
+      align-items:stretch;
+        min-height: 0;  /* NEW */
+  min-width: 0;   /* NEW; needed for Firefox */
+  overflow: hidden;
+    }
+
+    .bad-wrapper > div{
+      background:#eee;
+      padding:1em;
+    }
+    .bad-wrapper > div:nth-child(odd){
+      background:#ddd;
+    }
+
+    .bad-box1{
+      /*align-self:start;*/
+      grid-column:1/3;
+      grid-row:1/3;
+    }
+
+    .bad-box2{
+      /*align-self:end;*/
+      grid-column:3;
+      grid-row:1/3;
+    }
+
+    .bad-box3{
+      /*justify-self:end;*/
+      grid-column:2/4;
+      grid-row:3;
+
+    }
+
+    .bad-box4{
+      grid-column:1;
+    /*  grid-row:2/4;
+      grid-row:3;  */
+
+      border:1px solid #333;
+    }
+
+
+/**********************************************************
+              main flex container for cart row
+/**********************************************************/
+.flexrow{
+    display: flex;
+     flex-basis: 27%;
+     justify-content: space-between;
+     position: relative;
+}
+
+
+
+/**********************************************************
+               tuatuagye price
+/**********************************************************/
+
+   .price-container-1{
+      /*  display:flex;
+
+      align-items:flex-start;
+      align-items:flex-end;
+      align-items:center;
+      justify-content:space-around;
+
+      flex-direction:column;
+
+   /*   flex: 1;
+      order: 1; */
+    }
+
+    .price-container-1 span{
+            font-size: 18px;
+    font-weight: 400;
+    color: #b7b7b7;
+    text-decoration: line-through;
+    display: inline-block;
+    margin-left: 13px;
+    }
+
+    .tuatuagye-note-container-3{
+     /* display:flex;
+
+      justify-content:flex-start;
+      justify-content:flex-end;
+      justify-content:center;
+      justify-content:space-around;
+
+          flex: 1;
+      order: 2;
+      justify-content:space-between;*/
+    }
+
+
+
+  .brichcoin-container-3{
+   /*background-color:  display:flex;
+        flex: 1;
+      order: 3;
+      justify-content:space-between;
+*/
+  }
+
+  .brichcoin-container-3 i{
+      font-size: 20px;
+  }
+
+   .tuatuagye-section-container-3{
+  flex: 1;
+  order: 1;
+     /* flex-direction:column;  */
+        z-index: 5;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    margin: 5px;
+    background: white;
+     border:1px #ccc solid;
+  }
+   .image-section-container-3{
+   /* display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;*/
+    flex: 3;
+    order: 2;
+     border:1px #ccc solid;
+            z-index: 5;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    margin: 5px;
+    background: white;
+  }
+   .large-image-container-3{
+   /* display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;  */
+  }
+   .small-image-container-3{
+  /*  display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;  */
+  }
+
+      .cash-price-container-3{
+/*
+    display:flex;
+    flex-wrap:wrap;  */
+    justify-content:space-between;
+     flex: 1;
+    order: 3;
+     border:1px #ccc solid;
+              z-index: 5;
+    flex-wrap:wrap;
+    background: white;
+
+
+  }
+    .cash-note-container-2{
+   /* display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;*/
+  }
+
+  .categories-container-3{
+
+  }
+
+     .addtocart-section-row1-container-3{
+
+     }
+     .addtocart-section-row1-container-3 .product-shop{
+
+    display:flex;
+     background: white;
+     z-index: -5;
+   /* flex-wrap:wrap;
+    justify-content:space-between;
+    height: 40vh;*/
+  }
+  .container-1 div, .container-2 div, .container-3 div{
+    border:1px #ccc solid;
+    padding:10px;
+  }
+
+  .box-1{
+    flex:2;  /*2 makes the display auto wider*/
+    order:2;
+  }
+
+  .box-2{
+    flex:1;
+    order:1;  /*2 position of the block in the flex container*/
+  }
+
+  .box-3{
+    flex:1;
+    order: 3;
+  }
+
+  .container-2-box{
+    flex-basis: 27%;
+  }
+
+  .container-3-box{
+    flex-basis:12%;  /*2 position of the block in the flex container*/
+  }
+
+
+@media(max-width:768px){
+
+    .flexrow{
+        display: block;
+
+}
+
+}
+

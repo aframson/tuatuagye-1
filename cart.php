@@ -373,7 +373,7 @@ echo '<script>console.log("script name : cart.php ");</script>';
                             $id = $_GET['product_id'];
                                 }
                                 else $id = 53;
-                    $query = "SELECT * FROM oc_product WHERE product_id = $id";
+                    $query = "SELECT * FROM ttg_product WHERE product_id = $id";
                     $result = mysqli_query($connect, $query);
                     if (!$result) {
                    echo mysqli_error($connect) ;
@@ -386,22 +386,22 @@ echo '<script>console.log("script name : cart.php ");</script>';
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="product-pic-zoom">
-                                  <img class="product-big-img" src="http://tuatuagye.com/upload/image/'.$row["image"].'" alt="">
+                                  <img class="product-big-img" src="http://tuatuagye.brichghana.com//upload/image/'.$row["image"].'" alt="">
                                 <div class="zoom-icon">
                                     <i class="fa fa-search-plus"></i>
                                 </div>
                             </div>
                             <div class="product-thumbs">
                                 <div class="product-thumbs-track ps-slider owl-carousel">
-                                    <div class="pt active" data-imgbigurl="http://tuatuagye.com/upload/image/'.$row["image"].'"><img
-                                            src="http://tuatuagye.com/upload/image/'.$row["image"].'" alt=""></div>
+                                    <div class="pt active" data-imgbigurl="http://tuatuagye.brichghana.com//upload/image/'.$row["image"].'"><img
+                                            src="http://tuatuagye.brichghana.com/upload/image/'.$row["image"].'" alt=""></div>
 
                                             
-                                    <div class="pt" data-imgbigurl="http://tuatuagye.com/upload/image/'.$row["image"].'"><img
-                                            src="http://tuatuagye.com/upload/image/'.$row["image"].'" alt=""></div>
-                                    <div class="pt" data-imgbigurl="http://tuatuagye.com/upload/image/'.$row["image"].'"><img
-                                            src="http://tuatuagye.com/upload/image/'.$row["image"].'" alt=""></div>
-                                    <div class="pt" data-imgbigurl="http://tuatuagye.com/upload/image/'.$row["image"].'"><img
+                                    <div class="pt" data-imgbigurl="http://tuatuagye.brichghana.com//upload/image/'.$row["image"].'"><img
+                                            src="http:/tuatuagye.brichghana.com/upload/image/'.$row["image"].'" alt=""></div>
+                                    <div class="pt" data-imgbigurl="http://tuatuagye.brichghana.com/upload/image/'.$row["image"].'"><img
+                                            src="http://tuatuagye.brichghana.com/upload/image/'.$row["image"].'" alt=""></div>
+                                    <div class="pt" data-imgbigurl="http://tuatuagye.brichghana.com//upload/image/'.$row["image"].'"><img
                                             src="http://tuatuagye.com/upload/image/'.$row["image"].'" alt=""></div>
                                 </div>
                             </div>
