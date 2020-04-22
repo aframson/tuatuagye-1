@@ -177,7 +177,14 @@
     });
     /*-------------------
 		Range Slider
-	--------------------- */
+    --------------------- */
+    
+
+
+    
+
+
+
 	var rangeSlider = $(".price-range"),
 		minamount = $("#minamount"),
 		maxamount = $("#maxamount"),

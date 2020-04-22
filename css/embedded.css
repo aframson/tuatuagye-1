@@ -2,6 +2,60 @@
         background-color: #f5f5f5;
     }
 
+
+  /* my updates */
+  .midle1{
+    height: 40px;
+    padding: 10px;
+  }
+.imgmenu{
+   height:45px;
+   padding: 10px;
+   position: absolute;
+   margin-left: 550px;
+   margin-top: -55px;
+   display: none;
+   position: ;
+}
+#sericon{
+  height: 40px;padding: 10px;
+  background: rgb(42, 151, 153);
+  border-radius: 50px;margin-top: -41px;
+  z-index:2000;position: absolute;
+  margin-left: 319px;
+}
+.adscroll{
+  height: 100px;width: 100%;
+  display: flex;margin-top: -10px;overflow: hidden;
+}
+.sli1{
+  height: 100%;padding: 10px;width: 300px;
+  display: flex;
+}
+.miniicon{
+  height: 50px;margin-top: 10px;
+}
+.minitext{
+  font-size: 13px;padding: 10px;color: gray;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+  /*  */
+
+
+
+.site-header{
+  position: sticky;
+  top: 0px;
+ 
+}
+
+@media(min-width:1408px){   
+  .site-header{
+    position: sticky;
+    top: 0px;
+  }
+
+}
     * {
     margin: 0;
     padding: 0;
@@ -15,11 +69,13 @@
 /*@media(min-width:468px){    */
 .container-15{
       display:flex;
+      
 
     }
   .flexiblebox-1{
     flex:1;  /*2 makes the display auto wider*/
     order:2;
+   
   }
 
   .flexiblebox-2{
@@ -33,14 +89,15 @@
   }
 
 
-                 div.modal-content {
-                            width: 200%;
+              div.modal-content {
+                        width: 200%;
 
-                        }
+              }
 
-div.header-logo a.logo1 img {
+ a.logo1 img {
     max-width: 50px;
     margin-top: 15px;
+    margin-left: -50%;
 }
 
 
@@ -174,20 +231,54 @@ div.header-logo a.logo1 img {
   }
     .newslatter-item .subscribe-form button{
       background: rgb(42, 151, 153);
-      border: 1px solid rgb(42, 151, 153);
+      border: 1px solid #2a9799;
   }
    .footer-widget ul li a{
         color: rgb(42, 151, 153);
     }
   .footer-logo{ position: relative; left: 75px; max-width: 70px; margin: 19px;}
 
-      @media(max-width: 991px){
-  .footer-logo{   position: relative;
-    left: 405px;
-    max-width: 80px;
+
+  
+  @media(max-width: 1198px){
+    .container-15{
+      margin-left: 100px;
+   }
   }
+    @media(max-width: 990px){
+      a.logo1 img {
+        margin-left:-100px;
+      }
+  .footer-logo{   
+    position: relative;
+    left: 405px;
+  }
+  .container-15{
+     margin-left: 100px;
+  }
+
+  /* div.header-ctn{
+        margin-left: 50px;
+  } */
+
+
+
 }
-    @media(max-width: 779px){
+
+
+    @media(max-width: 766px){
+      .search-btn{
+        margin-left:-200px;
+      }
+      a.logo1 img {
+        margin-left:-320px;
+      }
+      .container-15{
+        display: none;
+     }
+     .imgmenu{
+         display: block;
+     }
   .footer-logo{  max-width: 70px; margin: 14px;
 
     left: 331px;
@@ -244,23 +335,35 @@ input[type="number"]::-webkit-inner-spin-button {
 
 
 */
+
+         /* container for search  */
+          .search-btn{
+            /* border: 1px solid; */
+            width: 400px;
+            position: absolute;
+            top:0;right:0;left:0;margin: auto;
+          }
+
              div.search-btn form.navbar-form{
-             width: 360px;
-             margin-top: 2px;
-             position: relative;
-             left: -40px;
-             padding: 20px;
+             width: 90%;
+             height:30;
+             padding: 10;
+             margin-top:20px;
+             margin-left: 0%;
+
              }
               div.search-btn form.navbar-form input{
-              box-shadow:  1px 3px  #888888;
-             border-radius: 30px 1px  1px 30px;
-
-
-                 }
+              border-radius: 100px;
+              border: 1px solid rgb(212, 212, 212);
+              padding: 10px;
+              background: rgb(245, 245, 245);
+              height: 42px;
+              
+              }
                  div.search-btn form.navbar-form button {
-
+                  
                position: relative;
-             left: -19px;
+               left: -19px;
               margin-top: -1px;
               background: rgb(42, 151, 153);
 
@@ -516,12 +619,10 @@ div.nav-global .ng-mobile a::before{
    @media  only screen and (max-width: 768px) {
 
 
-
-
-                        div div.header-search {
-                                    position: relative;
-                                    left: 19;
-                                      }
+         div div.header-search {
+              position: relative;
+              left: 19;
+                }
 
 
      }
@@ -611,11 +712,11 @@ div.nav-global .ng-mobile a::before{
                        margin-top: -11;
                }
 
-                                    div.header-ctn div.wish{
-                                     position: absolute;
-                                     left: 1;
-                                     top: 32;
-                                    }
+              div.header-ctn div.wish{
+                position: absolute;
+                left: 1;
+                top: 32;
+              }
 
 
 
@@ -624,7 +725,6 @@ div.nav-global .ng-mobile a::before{
 
                              /*logo*/
                         div.header-logo a.logo1 img {
-
                             display: none;
                             }
                             div.header-ctn div.wish{
@@ -711,9 +811,9 @@ div.nav-global .ng-mobile a::before{
 
 
 nav.site-header.sticky-top.py-1.bootstrap-nav{
-      margin-top: 78px;
-background: rgb(42, 151, 153);
-    font-size: 19px;
+      margin-top:-10px ;
+      background: rgb(42, 151, 153);
+      font-size: 19px;
 
 
 
@@ -763,6 +863,7 @@ color: white;
 div .product-item div.pi-pic{
     width: 258px;
     height: 315px;
+    background: white;
 } 
 
   /**********************************************************
@@ -1006,7 +1107,7 @@ div .product-item div.pi-pic{
     flex-basis:12%;  /*2 position of the block in the flex container*/
   }
 
-
+/* 
 @media(max-width:768px){
 
     .flexrow{
@@ -1014,5 +1115,9 @@ div .product-item div.pi-pic{
 
 }
 
+} */
+@media screen and (max-width:700px){
+.site-mobile-menu-logo{
+  visibility: hidden;
 }
-
+}

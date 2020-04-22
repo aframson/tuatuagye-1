@@ -10,9 +10,9 @@ if (empty($_SESSION['username'])){
     $_SESSION['username'] = $_SERVER['REMOTE_ADDR'];
 }
 $dbhost = 'localhost';
-$dbuser = 'vxkgn0fmfwww';
-$dbpass = '>##e(a}T%5P';
-$dbname="TuaTuaGye Data";
+$dbuser = 'root';
+$dbpass = '';
+$dbname="tuatua";
 $connect  = mysqli_connect($dbhost, $dbuser, $dbpass,$dbname);
 
 // Check connection
