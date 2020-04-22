@@ -4,9 +4,33 @@
 
 
   /* my updates */
+
+
+  .logogxx{
+      height: 25px;
+      /* width: 40px; */
+      position: absolute;
+      /* background: white; */
+      /* border-radius: 5px; */
+      margin: 10px;
+      
+  }
+  .imgmenuxx{
+      height: 35px;
+      /* width: 40px; */
+      position: absolute;
+      background: white;
+      padding: 10px;border-radius: 5px;
+      margin: 5px;
+      margin-left: 85%;
+      display:none;
+
+  }
   .midle1{
-    height: 40px;
-    padding: 10px;
+    height:50px;
+    width:50px;
+    padding:10px;
+   
   }
 .imgmenu{
    height:45px;
@@ -15,14 +39,13 @@
    margin-left: 550px;
    margin-top: -55px;
    display: none;
-   position: ;
 }
 #sericon{
-  height: 40px;padding: 10px;
+  height: 38px;padding: 10px;
   background: rgb(42, 151, 153);
-  border-radius: 50px;margin-top: -41px;
+  border-radius: 50px;margin-top: -40px;
   z-index:2000;position: absolute;
-  margin-left: 319px;
+  margin-left: 320px;
 }
 .adscroll{
   height: 100px;width: 100%;
@@ -195,13 +218,15 @@
       display:flex;
       align-items:flex-start;
        justify-content:space-between;
-       width: 100%
+       width: 100%;
        /*
   align-items:flex-start;
       align-items:flex-end;
       align-items:center;
       justify-content:space-around;
        */
+       
+       
   }
 
   .flex_box1{
@@ -310,7 +335,7 @@
                search bar area navbar wishlist brich coin
 /**********************************************************/
        div .col-md-3.myadd.clearfix{
-                position: relative;
+        position: relative;
         left: -89px;
          margin-top: 11px;
        }
@@ -874,7 +899,16 @@ div .product-item div.pi-pic{
      box-shadow: 5px 5px 5px 5px grey;
 
 }
-.product-item div{text-align:center;	margin:10px;}
+.product-item div{
+  text-align:center;	
+  margin:10px;
+  /* top: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+   */
+}
   /**********************************************************
                     Deal of the week
 /**********************************************************/
@@ -1117,7 +1151,36 @@ div .product-item div.pi-pic{
 
 } */
 @media screen and (max-width:700px){
-.site-mobile-menu-logo{
-  visibility: hidden;
+  .header-logo{
+    margin-top: -20px;
+    margin-left: 100px;
+  }
+  
 }
+
+@media screen and (max-width:582px){
+  .form-control{
+      width:200px;
+  }
+  .imgmenu{
+     margin-top:-10px;
+  }
+  .search-btn{
+      width: 300px;
+       margin-top: 20px;
+  }
+#sericon{
+  margin-left: 230px;  
+}
+div.header-logo a.logo1 img {
+      margin-top: 55px;
+      position: absolute;
+      margin-left: -56%;
+  }
+
+  .imgmenuxx{
+     display: block;
+  }
+
+
 }

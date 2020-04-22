@@ -12,15 +12,11 @@ function get_nav($sth){
 <div class="container"  >
 <div class="mobile container" >
 
-
-
-
 <div class="btn-group" role="group" aria-label="">
 
     <div class="btn-group" role="group">
         <a href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="secondary">
-         <i class="material-icons" id="menuicon"
-         style=" color: rgb(42, 151, 153)">reorder</i>
+         
 
         </a>
         <div class="dropdown-menu" aria-labelledby="dropdownId">
@@ -30,10 +26,8 @@ function get_nav($sth){
         </div>
     </div>
 </div>
-<div class="site-mobile-menu-logo">
-    <img src="./img/logo1.png" alt="" srcset="">
 
-</div>
+
 </div>
 
 <div class="row">
@@ -41,7 +35,7 @@ function get_nav($sth){
                 <div class="col-md-3">
                     <div class="header-logo">
                         <a href="#" class="logo1">
-                            <img src="./img/logo1.png" alt="">
+                            <img class="logog" src="./img/logo1.png" alt="">
                         </a>
                     </div>
 
