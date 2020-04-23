@@ -10,9 +10,9 @@ if (empty($_SESSION['username'])){
     $_SESSION['username'] = $_SERVER['REMOTE_ADDR'];
 }
 $dbhost = 'localhost';
-$dbuser = 'vxkgn0fmfwww';
-$dbpass = '>##e(a}T%5P';
-$dbname="TuaTuaGye Data";
+$dbuser = 'root';
+$dbpass = '';
+$dbname='tuatua';
 $connect  = mysqli_connect($dbhost, $dbuser, $dbpass,$dbname);
 
 // Check connection
@@ -403,52 +403,6 @@ Class recently_viewed {
     <div class="row">
 
     
-    <?php
-
-      $query = "SELECT * FROM oc_product ORDER BY product_id ";
-    $result = mysqli_query($connect, $query);
-    if (!$result) {
-   echo mysqli_error($connect) ;
-   // exit();
-}
-     while ($row = mysqli_fetch_array($result)) {
-    $output .= ' 
-   
-                                                 <div class="col-lg-3 col-sm-6">
-                    <div class="product-item">
-                        <div class="pi-pic">
-                          <img src="http://tuatuagye.brichghana.com/upload_/image/'.$row["image"].'" alt="">
-                            <div class="icon">
-                                <i class="icon_heart_alt"></i>
-                            </div>
-                            <ul>
-                                <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                <li class="quick-view"><a href="#" class="buy-item" id ="'.$row['product_id'].'">Buy</a></li>
-                                <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="pi-text">
-                              <h5>'. $row["model"]. '</h5>
-                            
-                            <a href="#">
-                        
-                 
-                              <div class="catagory-name"><h7>category name</h7></div>
-                            </a>
-                            <div class="product-price">
-                             Ghc '. $row["price"]. '
-                            </div>
-                        </div>
-                    </div>
-                </div> ';
-        // check if more than 0 record found
-       
-	 }
-
-	 echo       $output;
-
-?>
-
 
     <?php
 
