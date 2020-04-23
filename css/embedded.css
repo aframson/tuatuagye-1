@@ -1238,7 +1238,8 @@ div .product-item div.pi-pic{
   .imgcen{
     height:auto;
     border: 1px solid;
-     margin:auto;width: fit-content;
+     margin:auto;
+    /* width: fit-content;  */
      top:0;right:0;left:0;
   }
   .logogxx{
