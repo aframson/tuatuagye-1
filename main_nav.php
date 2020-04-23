@@ -108,7 +108,5 @@ function get_nav($sth){
 
 
 
-</div>
-
 ';
 }

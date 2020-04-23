@@ -11,6 +11,30 @@
 
 (function ($) {
 
+     // catch
+    $('.menustick').hide();
+    $('#closex').hide()
+
+
+
+    // click events
+
+    $('.imgmenuxx').click(function(){
+        $('#closex').show()
+        $('.menustick').hide()
+        $('.menustick').fadeIn(200)
+     })
+
+     $('#closex').click(function(){
+        $('.menustick').show()
+        $('#closex').hide()
+        $('.menustick').fadeOut(200)
+     })
+
+
+
+
+
     /*------------------
         Preloader
     --------------------*/

@@ -32,7 +32,19 @@
 
 <body>
     <!-- Page Preloder -->
-  
+    <div class="menustick">
+        <ul class="ul">
+            <li class="li"><a class="a" href="#">Your Cart</a></li>
+            <li class="li"><a class="a" href="#">Wish List</a></li>
+            <li class="li"><a class="a" href="#">ttgCoins</a></li>
+            <li class="li"><a class="a" href="#">Products</a></li>
+            <li class="li"><a class="a" href="#">Tuaguagye</a></li>
+            <li class="li"><a class="a" href="#">Catergories</a></li>
+            <li class="li"><a class="a" href="#">others</a></li>
+            <li class="li"><a class="a" href="#">Support</a></li>
+        </ul>
+    </div>
+   
 
 
 <link href="//i.alicdn.com/ae-header/20191217202516/buyer/glofront/ae-header.css" rel="stylesheet" type="text/css" />
@@ -225,10 +237,12 @@
          <nav class="site-header sticky-top py-1 bootstrap-nav ">
       <div class="container d-flex flex-column flex-md-row justify-content-between">
           <img class="imgmenuxx" src="img/menu.png">
+          <img class="imgmenuxx" id="closex" src="img/icon-2.png">
+
           <center>
               <img class="midle1" src="img/logo1.png" alt="" srcset="">
           </center>
-          <img class="logogxx" src="./img/menu2.png" alt="">
+          <!-- <img class="logogxx" src="./img/menu2.png" alt=""> -->
 
 
         <a class="py-2 d-none d-md-inline-block" href="product.php">Products</a>
@@ -237,10 +251,13 @@
         <a class="py-2 d-none d-md-inline-block" href="#">others</a>
         <a class="py-2 d-none d-md-inline-block" href="#">Support</a>
 
+    
 
     </nav>
 
     <!-- Header End -->
+
+   
 
     <!-- Hero Section Begin -->
     <section class="hero-section">
@@ -340,6 +357,9 @@
         <h3 class="section-title">Popular products</h3>
     </header><!-- sect-heading -->
     <div class="row">
+          
+           
+                <div class="containxx">
 
                       <div class="product-item">
                             <div class="pi-pic">
@@ -615,8 +635,7 @@
                                 </div>
                             </div>
                         </div>
-             
-    
+                </div>
 
     </div> <!-- row.// -->
 
