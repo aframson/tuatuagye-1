@@ -11,6 +11,32 @@
 
 (function ($) {
 
+
+    
+     // catch
+     $('.menustick').hide();
+     $('#closex').hide()
+ 
+ 
+ 
+     // click events
+ 
+     $('.imgmenuxx').click(function(){
+         $('#closex').show()
+         $('.imgmenuxx').hide()
+         $('.menustick').fadeIn(200)
+      })
+ 
+      $('#closex').click(function(){
+            $('.imgmenuxx').show()
+            $('#closex').hide()
+            $('.menustick').fadeOut(200)
+      })
+ 
+ 
+ 
+ 
+
     /*------------------
         Preloader
     --------------------*/
@@ -178,7 +204,8 @@
     /*-------------------
 		Range Slider
 	--------------------- */
-	var rangeSlider = $(".price-range"),
+
+    var rangeSlider = $(".price-range"),
 		minamount = $("#minamount"),
 		maxamount = $("#maxamount"),
 		minPrice = rangeSlider.data('min'),

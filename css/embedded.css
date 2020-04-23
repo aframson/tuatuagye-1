@@ -65,6 +65,18 @@
       cursor:pointer;
 
   }
+  .imgmenuxxx{
+    height: 35px;
+    /* width: 40px; */
+    position: absolute;
+    background: white;
+    padding: 10px;border-radius: 5px;
+    margin: 5px;
+    margin-left: 75%;
+    display:none;
+    cursor:pointer;
+
+}
   .midle1{
     height:50px;
     width:50px;

@@ -233,6 +233,8 @@
          <nav class="site-header sticky-top py-1 bootstrap-nav ">
       <div class="container d-flex flex-column flex-md-row justify-content-between">
           <img class="imgmenuxx" src="img/menu.png">
+          <img class="imgmenuxxx" id="closex" src="img/menu.png">
+
           <center>
               <img class="midle1" src="img/logo1.png" alt="" srcset="">
           </center>
@@ -784,7 +786,7 @@
     <!-- Women Banner Section End -->
 
 
-    <!-- Deal Of The Week Section Begin-->
+    <!-- Deal Of The Week Section Begin-->      
     <section class="deal-of-week set-bg spad" data-setbg="img/Main_Banner_TTG_01_laptops.jpg" >
         <div class="container">
             <div class="col-lg-6 text-center">
