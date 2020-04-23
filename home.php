@@ -233,12 +233,12 @@
          <nav class="site-header sticky-top py-1 bootstrap-nav ">
       <div class="container d-flex flex-column flex-md-row justify-content-between">
           <img class="imgmenuxx" src="img/menu.png">
-          <img class="imgmenuxxx" id="closex" src="img/menu.png">
+          <img class="imgmenuxxx" id="closex" src="img/cancel.png">
 
-          <center>
-              <img class="midle1" src="img/logo1.png" alt="" srcset="">
-          </center>
-          <img class="logogxx" src="./img/menu2.png" alt="">
+         
+          <img class="midle1" src="img/logo1.png" alt="" srcset="">
+         
+          <!-- <img class="logogxx" src="./img/menu2.png" alt=""> -->
 
 
         <a class="py-2 d-none d-md-inline-block" href="product.php">Products</a>
@@ -353,6 +353,12 @@
         <h3 class="section-title">Popular products</h3>
     </header><!-- sect-heading -->
     <div class="row">
+
+
+           
+            <div class="imgcen">
+
+            
 
                       <div class="product-item">
                             <div class="pi-pic">
@@ -629,7 +635,7 @@
                             </div>
                         </div>
              
-        
+            </div>
 
     </div> <!-- row.// -->
 

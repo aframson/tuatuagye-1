@@ -1235,6 +1235,12 @@ div .product-item div.pi-pic{
       width: 300px;
        margin-top: 20px;
   }
+  .imgcen{
+    height:auto;
+    border: 1px solid;
+     margin:auto;width: fit-content;
+     top:0;right:0;left:0;
+  }
   .logogxx{
     display:block;
   }

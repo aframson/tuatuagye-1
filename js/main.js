@@ -24,13 +24,13 @@
      $('.imgmenuxx').click(function(){
          $('#closex').show()
          $('.imgmenuxx').hide()
-         $('.menustick').fadeIn(200)
+         $('.menustick').fadeIn(500)
       })
  
       $('#closex').click(function(){
             $('.imgmenuxx').show()
             $('#closex').hide()
-            $('.menustick').fadeOut(200)
+            $('.menustick').fadeOut(500)
       })
  
  
