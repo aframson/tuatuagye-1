@@ -59,7 +59,6 @@ function get_nav($sth){
                
          <div class="col-md-3 myadd clearfix">
 
-         <img class="imgmenu" src="img/menu.png">
         <div class="container-15">
     
           

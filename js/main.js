@@ -24,7 +24,7 @@
      $('.imgmenuxx').click(function(){
          $('#closex').show()
          $('.imgmenuxx').hide()
-         $('.menustick').fadeIn(500)
+         $('.menustick').toggle(400)
       })
  
       $('#closex').click(function(){

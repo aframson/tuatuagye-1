@@ -34,6 +34,10 @@
     <!-- Page Preloder -->
     <div class="menustick">
         <ul class="ul">
+            
+            <li class="li"><a class="a" href="#">Your Cart</a></li>
+            <li class="li"><a class="a" href="#">Your wishlist</a></li>
+            <li class="li"><a class="a" href="#">ttgCoin</a></li>
             <li class="li"><a class="a" href="#">Products</a></li>
             <li class="li"><a class="a" href="#">Tuaguagye</a></li>
             <li class="li"><a class="a" href="#">Catergories</a></li>
@@ -185,48 +189,7 @@
             <?php include_once 'main_nav.php'; 
                     get_nav('hi'); ?>
 <div class="navbar" style=" background-image: url(img/bg.PNG); margin-top: -18px"></div>
-<marquee behavior="" direction="">           <!-- scroll advertisment -->
-<div  class="adscroll">
-     
-           <div class="sli1">
-               <img class="miniicon" src="img/product07.png" alt="" srcset="">
-               <div class="minitext">
-                    quam dolorum quae molestias quisquam excepturi 
-               </div>
-            </div>
-
-           <div class="sli1">
-               <img class="miniicon" src="img/psd-gold-coin-icon_TTG.png" alt="" srcset="">
-               <div class="minitext">
-                    quam dolorum quae molestias quisquam 
-                    excepturi 
-               </div>
-            </div>
-
-            <div class="sli1">
-               <img class="miniicon" src="img/product06.png" alt="" srcset="">
-               <div class="minitext">
-                    quam dolorum quae molestias quisquam excepturi 
-               </div>
-            </div>
-
-            <div class="sli1">
-               <img class="miniicon" src="img/phone.jpg" alt="" srcset="">
-               <div class="minitext">
-                    quam dolorum quae molestias quisquam excepturi 
-               </div>
-            </div>
-
-            <div class="sli1">
-               <img class="miniicon" src="img/fitbit.jpg" alt="" srcset="">
-               <div class="minitext">
-                    quam dolorum quae molestias quisquam excepturi 
-               </div>
-            </div>
-
-</div>
-</marquee>
-                
+      
                             <!-- end of scroll advertisment -->
 
         <!-- navbar-->
@@ -356,7 +319,7 @@
 
 
            
-            <div class="imgcen">
+            <!-- <div class="imgcen"> -->
 
             
 
@@ -635,7 +598,7 @@
                             </div>
                         </div>
              
-            </div>
+            <!-- </div> -->
 
     </div> <!-- row.// -->
 
