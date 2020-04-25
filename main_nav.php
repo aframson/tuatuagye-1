@@ -4,23 +4,20 @@
 function get_nav($sth){
     
     echo '
-
+ 
+    
 
 <div class="add-to-cart">
  <!--top header navbar-->
-<div class="header d-flex"  style=" background-image: url(img/bg.PNG); " >
+<div class="header d-flex" style=" background-image: url(img/bg.PNG);" >
 <div class="container"  >
 <div class="mobile container" >
-
-
-
 
 <div class="btn-group" role="group" aria-label="">
 
     <div class="btn-group" role="group">
         <a href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="secondary">
-         <i class="material-icons "
-         style=" color: rgb(42, 151, 153)">reorder</i>
+         
 
         </a>
         <div class="dropdown-menu" aria-labelledby="dropdownId">
@@ -30,18 +27,16 @@ function get_nav($sth){
         </div>
     </div>
 </div>
-<div class="site-mobile-menu-logo">
-    <img src="./img/logo1.png" alt="" srcset="">
+
 
 </div>
-</div>
 
-<div class="row">
+   <div id="cartmenu" class="row">
                 <!-- LOGO -->
                 <div class="col-md-3">
                     <div class="header-logo">
                         <a href="#" class="logo1">
-                            <img src="./img/logo1.png" alt="">
+                            <img class="logog" src="./img/logo1.png" alt="">
                         </a>
                     </div>
 
@@ -50,33 +45,33 @@ function get_nav($sth){
                 <!-- /LOGO -->
 
                 <!-- SEARCH BAR -->
-              <div class="search-btn">
+              <div  class="search-btn">
 
 
-                               <form class="navbar-form">
-              <div class="input-group">
-                <input type="text" value="" class="form-control" placeholder="Search...">
-                <button type="submit" class="btn btn-white btn-round btn-just-icon">
-                  <i class="material-icons " style="color: white">search</i>
-                  <div class="ripple-container"></div>
-                </button>
-              </div>
-            </form>
-              </div>
+             <form class="navbar-form">
+                <div class="input-group">
+                  <input type="text" value="" id="search" class="form-control" placeholder="Search...">
+                </div>
+                <img id="sericon" src="img/ser.png">
+             </form>
+               
+            </div>
 
-                <!-- /SEARCH BAR -->
-                 <!-- ACCOUNT -->
+               
          <div class="col-md-3 myadd clearfix">
 
-
         <div class="container-15">
+    
+          
+
                 <div class="flexiblebox-1">
+
              <div class="header-ctn">
 
                     <div class="wish">
                             <a href="#">
                                 <i class="fa fa-heart-o"></i>
-                                <span  >Your Wishlist</span>
+                                <span >Your Wishlist</span>
                                 <div class="qty" style=" background-color: rgb(42, 151, 153)">2</div>
                             </a>
                         </div>
@@ -113,7 +108,6 @@ function get_nav($sth){
 
 
 
-</div>
-
 ';
+
 }

@@ -12,9 +12,9 @@ if (empty($_SESSION['username'])){
 
       
       $dbhost = 'localhost';
-$dbuser = 'vxkgn0fmfwww';
-$dbpass = '>##e(a}T%5P';
-$dbname="TuaTuaGye Data";
+$dbuser = 'root';
+$dbpass = '';
+$dbname="tuatua";
 $connect  = mysqli_connect($dbhost, $dbuser, $dbpass,$dbname);
 
 // Check connection
@@ -26,8 +26,6 @@ if ($connect->connect_error) {
  /***********************
       php ends here
         ******************************/
-
-echo '<script>console.log("script name : cart.php ");</script>';
 
 ?>
 

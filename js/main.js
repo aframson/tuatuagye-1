@@ -11,6 +11,124 @@
 
 (function ($) {
 
+
+
+
+
+
+
+
+    $('').click(function (params) {
+          
+
+           $.ajax({
+                url:"engine.php",
+                method:""
+           })
+        
+         
+    })
+
+
+    $('.name').click(function (params) {
+             
+        $(".hero-section").fadeOut(300);
+        $(".searchdrop").fadeOut(300)
+
+        var id =this.id;
+        var splitid = id.split(":");
+        var mainId = splitid[1];
+
+
+        $.ajax({
+            url:"",
+            method:"post",
+            dataType:"text",
+            data:{mainid:mainId},
+            beforeSend:function (params) {
+                
+            },
+            success:function (response) {
+                $("#urow").html(response);
+         }
+        })
+        
+
+
+
+    })
+
+
+
+    $('.searchdrop').hide();
+
+    // ajax call for search
+
+    $("#search").keyup(function(params) {
+
+    
+
+        $('.searchdrop').fadeIn(500)
+
+        let value = $('#search').val();
+
+
+        if (value == '') {
+
+            $('.searchdrop').fadeOut(100)
+            
+        }else{
+            $.ajax({
+                url:"livesearch.php",
+                method:"post",
+                dataType:'text',
+                data: {data:value},
+                beforeSend:function (params) {
+                    
+                },
+                success:function (response) {
+                   
+                    $('.searchdrop').html(response)
+
+                }
+            })
+        }
+
+            
+    })
+
+
+
+
+
+
+
+
+
+     // catch
+     $('.menustick').hide();
+     $('#closex').hide()
+ 
+ 
+ 
+     // click events
+ 
+     $('.imgmenuxx').click(function(){
+         $('#closex').show()
+         $('.imgmenuxx').hide()
+         $('.menustick').toggle(400)
+      })
+ 
+      $('#closex').click(function(){
+            $('.imgmenuxx').show()
+            $('#closex').hide()
+            $('.menustick').fadeOut(500)
+      })
+ 
+ 
+ 
+ 
+
     /*------------------
         Preloader
     --------------------*/
@@ -178,7 +296,8 @@
     /*-------------------
 		Range Slider
 	--------------------- */
-	var rangeSlider = $(".price-range"),
+
+    var rangeSlider = $(".price-range"),
 		minamount = $("#minamount"),
 		maxamount = $("#maxamount"),
 		minPrice = rangeSlider.data('min'),

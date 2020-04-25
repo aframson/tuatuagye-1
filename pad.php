@@ -4,8 +4,45 @@
       index file
       ***********************************/
       
+
+
+      function fetchItems()
+      {
+          include 'db.php';
+          $sele= mysqli_query($con,"SELECT * FROM products");
+
+          while ($row  = mysqli_fetch_array($sele)) {
+            
+            echo '
+            <div class="product-item">
+            <div class="pi-pic">
+                <img src="img/items/'.$row['name'].'" alt="">
+                <div class="icon">
+                    <i class="icon_heart_alt"></i>
+                </div>
+                <ul>
+                    <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
+                    <li class="quick-view"><a href="product.html">Buy</a></li>
+                    <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
+                </ul>
+            </div>
+            <div class="pi-text">
+                <div class="catagory-name">category</div>
+                <a href="#">
+                    <h5>'.$row['show_name'].'</h5>
+                </a>
+                <div class="product-price">
+                    Ghc '.$row['amount'].'
+                </div>
+            </div>
+        </div>
+               
+                  ';
+
+          }
+      }
   
-  
+   
   
   
   
@@ -32,15 +69,21 @@
 
 <body>
     <!-- Page Preloder -->
-  
-    <div class="google index" style="display:none">
-<p>
-    Welcome to Tuatuagye, your one stop online store. Shop items and pay in installment.
-    Sign in to <a href="#">Tuatuagye</a> Buy phones, 44" digital TV, freezer, blender, kettle etc.
-</p>
 
-
-</div>
+    <div class="menustick">
+        <ul class="ul">
+            
+            <li class="li"><a class="a" href="#">Your Cart</a></li>
+            <li class="li"><a class="a" href="#">Your wishlist</a></li>
+            <li class="li"><a class="a" href="#">ttgCoin</a></li>
+            <li class="li"><a class="a" href="#">Products</a></li>
+            <li class="li"><a class="a" href="#">Tuaguagye</a></li>
+            <li class="li"><a class="a" href="#">Catergories</a></li>
+            <li class="li"><a class="a" href="#">others</a></li>
+            <li class="li"><a class="a" href="#">Support</a></li>
+        </ul>
+    </div>
+   
 
 <link href="//i.alicdn.com/ae-header/20191217202516/buyer/glofront/ae-header.css" rel="stylesheet" type="text/css" />
 <div class="site-download-header" data-spm="100067" id="j-site-download-header" style="display:none;"><a href="#"><img data-src="#" /></a></div>
@@ -184,14 +227,26 @@
             <?php include_once 'main_nav.php'; 
                     get_nav('hi'); ?>
 <div class="navbar" style=" background-image: url(img/bg.PNG); margin-top: -18px"></div>
+      
+                            <!-- end of scroll advertisment -->
 
+        <!-- navbar-->      
+  
+        <!-- displays search product -->
 
-        <!-- navbar-->
+        <div class="searchdrop">
+        
+        </div>
+
          <nav class="site-header sticky-top py-1 bootstrap-nav ">
       <div class="container d-flex flex-column flex-md-row justify-content-between">
-           <a class="py-2" href="index.php">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mx-auto"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
-        </a>
+          <img class="imgmenuxx" src="img/menu.png">
+          <img class="imgmenuxxx" id="closex" src="img/cancel.png">
+
+         
+          <img class="midle1" src="img/logo1.png" alt="" srcset="">
+         
+          <!-- <img class="logogxx" src="./img/menu2.png" alt=""> -->
 
 
         <a class="py-2 d-none d-md-inline-block" href="product.php">Products</a>
@@ -200,13 +255,16 @@
         <a class="py-2 d-none d-md-inline-block" href="#">others</a>
         <a class="py-2 d-none d-md-inline-block" href="#">Support</a>
 
+    
 
     </nav>
 
     <!-- Header End -->
 
+   
+
     <!-- Hero Section Begin -->
-    <section class="hero-section">
+    <section  class="hero-section">
         
         <div class="hero-items owl-carousel">
             <div class="single-hero-items set-bg" data-setbg="img/tablet.jpg">
@@ -302,283 +360,14 @@
         <a href="#" class="btn btn-outline-primary float-right">See all</a>
         <h3 class="section-title">Popular products</h3>
     </header><!-- sect-heading -->
-    <div class="row">
+    <div id ="urow" class="row">
 
-                      <div class="product-item">
-                            <div class="pi-pic">
-                                <img src="img/items/1.jpg" alt="">
-                                <div class="icon">
-                                    <i class="icon_heart_alt"></i>
-                                </div>
-                                <ul>
-                                    <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                    <li class="quick-view"><a href="product.html">Buy</a></li>
-                                    <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="pi-text">
-                                <div class="catagory-name">category</div>
-                                <a href="#">
-                                    <h5>product name</h5>
-                                </a>
-                                <div class="product-price">
-                                    Ghc 13.00
-                                </div>
-                            </div>
-                        </div>
-                        
           
-                                    <div class="product-item">
-                            <div class="pi-pic">
-                                <img src="img/items/2.jpg" alt="">
-                                <div class="icon">
-                                    <i class="icon_heart_alt"></i>
-                                </div>
-                                <ul>
-                                    <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                    <li class="quick-view"><a href="#"> Buy </a></li>
-                                    <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="pi-text">
-                                <div class="catagory-name">Shoes</div>
-                                <a href="#">
-                                    <h5>Guangzhou sweater</h5>
-                                </a>
-                                <div class="product-price">
-                                    Ghc 13.00
-                                </div>
-                            </div>
-                        </div>
-        
-                                    <div class="product-item">
-                            <div class="pi-pic">
-                                <img src="img/items/3.jpg" alt="">
-                                <div class="icon">
-                                    <i class="icon_heart_alt"></i>
-                                </div>
-                                <ul>
-                                    <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                    <li class="quick-view"><a href="#">Buy</a></li>
-                                    <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="pi-text">
-                                <div class="catagory-name">category</div>
-                                <a href="#">
-                                    <h5>product name</h5>
-                                </a>
-                                <div class="product-price">
-                                    Ghc 13.00
-                                </div>
-                            </div>
-                        </div>
 
-                                                <div class="product-item">
-                            <div class="pi-pic">
-                                <img src="img/items/4.jpg" alt="">
-                                <div class="icon">
-                                    <i class="icon_heart_alt"></i>
-                                </div>
-                                <ul>
-                                    <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                    <li class="quick-view"><a href="#"> Buy</a></li>
-                                    <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="pi-text">
-                                <div class="catagory-name">Shoes</div>
-                                <a href="#">
-                                    <h5>Guangzhou sweater</h5>
-                                </a>
-                                <div class="product-price">
-                                    Ghc 13.00
-                                </div>
-                            </div>
-                        </div>
-       <div class="product-item">
-                            <div class="pi-pic">
-                                <img src="img/items/5.jpg" alt="">
-                                <div class="icon">
-                                    <i class="icon_heart_alt"></i>
-                                </div>
-                                <ul>
-                                    <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                    <li class="quick-view"><a href="#">Buy</a></li>
-                                    <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="pi-text">
-                                <div class="catagory-name">category</div>
-                                <a href="#">
-                                    <h5>product name</h5>
-                                </a>
-                                <div class="product-price">
-                                    Ghc 13.00
-                                </div>
-                            </div>
-                        </div>
-        <div class="product-item">
-                            <div class="pi-pic">
-                                <img src="img/items/6.jpg" alt="">
-                                <div class="icon">
-                                    <i class="icon_heart_alt"></i>
-                                </div>
-                                <ul>
-                                    <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                    <li class="quick-view"><a href="#">Buy</a></li>
-                                    <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="pi-text">
-                                <div class="catagory-name">category</div>
-                                <a href="#">
-                                    <h5>product name</h5>
-                                </a>
-                                <div class="product-price">
-                                    Ghc 13.00
-                                </div>
-                            </div>
-                        </div>
-         <div class="product-item">
-                            <div class="pi-pic">
-                                <img src="img/items/9.jpg" alt="">
-                                <div class="icon">
-                                    <i class="icon_heart_alt"></i>
-                                </div>
-                                <ul>
-                                    <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                    <li class="quick-view"><a href="#">Buy</a></li>
-                                    <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="pi-text">
-                                <div class="catagory-name">category</div>
-                                <a href="#">
-                                    <h5>product name</h5>
-                                </a>
-                                <div class="product-price">
-                                    Ghc 13.00
-                                </div>
-                            </div>
-                        </div>
-                 <div class="product-item">
-                         <div class="pi-pic">
-                             <img src="img/items/7.jpg" alt="">
-                                <div class="icon">
-                                    <i class="icon_heart_alt"></i>
-                                </div>
-                                <ul>
-                                    <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                    <li class="quick-view"><a href="#">Buy</a></li>
-                                    <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="pi-text">
-                                <div class="catagory-name">category</div>
-                                <a href="#">
-                                    <h5>product name</h5>
-                                </a>
-                                <div class="product-price">
-                                    Ghc 13.00
-                                </div>
-                            </div>
-                        </div>
-
-
-                                                <div class="product-item">
-                            <div class="pi-pic">
-                                <img src="img/items/1.jpg" alt="">
-                                <div class="icon">
-                                    <i class="icon_heart_alt"></i>
-                                </div>
-                                <ul>
-                                    <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                    <li class="quick-view"><a href="#">Buy</a></li>
-                                    <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="pi-text">
-                                <div class="catagory-name">category</div>
-                                <a href="#">
-                                    <h5>product name</h5>
-                                </a>
-                                <div class="product-price">
-                                    Ghc 13.00
-                                </div>
-                            </div>
-                        </div>
-                        
-          
-                                    <div class="product-item">
-                            <div class="pi-pic">
-                                <img src="img/items/2.jpg" alt="">
-                                <div class="icon">
-                                    <i class="icon_heart_alt"></i>
-                                </div>
-                                <ul>
-                                    <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                    <li class="quick-view"><a href="#"> Buy </a></li>
-                                    <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="pi-text">
-                                <div class="catagory-name">Shoes</div>
-                                <a href="#">
-                                    <h5>Guangzhou sweater</h5>
-                                </a>
-                                <div class="product-price">
-                                    Ghc 13.00
-                                </div>
-                            </div>
-                        </div>
-        
-                                    <div class="product-item">
-                            <div class="pi-pic">
-                                <img src="img/items/3.jpg" alt="">
-                                <div class="icon">
-                                    <i class="icon_heart_alt"></i>
-                                </div>
-                                <ul>
-                                    <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                    <li class="quick-view"><a href="#">Buy</a></li>
-                                    <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="pi-text">
-                                <div class="catagory-name">category</div>
-                                <a href="#">
-                                    <h5>product name</h5>
-                                </a>
-                                <div class="product-price">
-                                    Ghc 13.00
-                                </div>
-                            </div>
-                        </div>
-
-                                                <div class="product-item">
-                            <div class="pi-pic">
-                                <img src="img/items/4.jpg" alt="">
-                                <div class="icon">
-                                    <i class="icon_heart_alt"></i>
-                                </div>
-                                <ul>
-                                    <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                    <li class="quick-view"><a href="#"> Buy</a></li>
-                                    <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="pi-text">
-                                <div class="catagory-name">Shoes</div>
-                                <a href="#">
-                                    <h5>Guangzhou sweater</h5>
-                                </a>
-                                <div class="product-price">
-                                    Ghc 13.00
-                                </div>
-                            </div>
-                        </div>
-             
+              
+             <?php fetchItems();?>
+           
+            
     
 
     </div> <!-- row.// -->
@@ -736,7 +525,11 @@
     <!-- Women Banner Section End -->
 
 
+<<<<<<< HEAD:home.php
+    <!-- Deal Of The Week Section Begin-->      
+=======
     <!-- Deal Of The Week Section Begin-->
+>>>>>>> c05b9df7612213f4cce7ee81a7d7f85a047da948:pad.php
     <section class="deal-of-week set-bg spad" data-setbg="img/Main_Banner_TTG_01_laptops.jpg" >
         <div class="container">
             <div class="col-lg-6 text-center">
