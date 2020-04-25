@@ -4,7 +4,8 @@
 function get_nav($sth){
     
     echo '
-
+ 
+    
 
 <div class="add-to-cart">
  <!--top header navbar-->
@@ -30,7 +31,7 @@ function get_nav($sth){
 
 </div>
 
-<div class="row">
+   <div id="cartmenu" class="row">
                 <!-- LOGO -->
                 <div class="col-md-3">
                     <div class="header-logo">
@@ -49,7 +50,7 @@ function get_nav($sth){
 
              <form class="navbar-form">
                 <div class="input-group">
-                  <input type="text" value=""  class="form-control" placeholder="Search...">
+                  <input type="text" value="" id="search" class="form-control" placeholder="Search...">
                 </div>
                 <img id="sericon" src="img/ser.png">
              </form>
@@ -59,7 +60,6 @@ function get_nav($sth){
                
          <div class="col-md-3 myadd clearfix">
 
-         <img class="imgmenu" src="img/menu.png">
         <div class="container-15">
     
           
@@ -109,4 +109,5 @@ function get_nav($sth){
 
 
 ';
+
 }

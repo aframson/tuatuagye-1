@@ -11,10 +11,22 @@ if (empty($_SESSION['username'])){
 
 
       
+<<<<<<< HEAD
 $dbhost = 'localhost';
 $dbuser = 'root';
 $dbpass = '';
 $dbname="tuatua";
+||||||| merged common ancestors
+      $dbhost = 'localhost';
+$dbuser = 'vxkgn0fmfwww';
+$dbpass = '>##e(a}T%5P';
+$dbname="TuaTuaGye Data";
+=======
+      $dbhost = 'localhost';
+$dbuser = 'root';
+$dbpass = '';
+$dbname="tuatua";
+>>>>>>> e80ba9b616333d2aa2d4d3754d9b94c9afbfcdaf
 $connect  = mysqli_connect($dbhost, $dbuser, $dbpass,$dbname);
 
 
@@ -27,8 +39,6 @@ if ($connect->connect_error) {
  /***********************
       php ends here
         ******************************/
-
-echo '<script>console.log("script name : cart.php ");</script>';
 
 ?>
 
