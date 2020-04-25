@@ -12,7 +12,11 @@ if (empty($_SESSION['username'])){
 $dbhost = 'localhost';
 $dbuser = 'root';
 $dbpass = '';
+<<<<<<< HEAD
 $dbname='tuatua';
+=======
+$dbname="tuatua";
+>>>>>>> 442b1f3364ea7159356c117a07a29bba1ac9e5aa
 $connect  = mysqli_connect($dbhost, $dbuser, $dbpass,$dbname);
 
 // Check connection

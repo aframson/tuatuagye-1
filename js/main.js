@@ -203,9 +203,21 @@
     });
     /*-------------------
 		Range Slider
+<<<<<<< HEAD
 	--------------------- */
 
     var rangeSlider = $(".price-range"),
+=======
+    --------------------- */
+    
+
+
+    
+
+
+
+	var rangeSlider = $(".price-range"),
+>>>>>>> 442b1f3364ea7159356c117a07a29bba1ac9e5aa
 		minamount = $("#minamount"),
 		maxamount = $("#maxamount"),
 		minPrice = rangeSlider.data('min'),

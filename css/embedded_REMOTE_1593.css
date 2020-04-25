@@ -5,48 +5,7 @@
 
   /* my updates */
 
-<<<<<<< HEAD
-  .li:hover{
-     background:#32ced1 ;transition: 0.3s;
-     cursor:pointer;
-  }
 
-  /* drop down 2 */
-
-
-
-  /* drop down 1 */
-
-    
-
-  .ul{
-    margin:0;
-   
-  }
-  .li,.a{
-    padding: 10px;
-  }
-  .li{
-    margin-top: 5px;
-    border-radius:5px;
-    background:#2a9799;
-  }
-  .a{
-    color:white;
-    font-family: monospace;
-  }
-  .menustick{
-    height:auto;
-    width:100%;
-    position:fixed;
-    z-index: 3000;
-    margin-top: 55px;
-    background:white;
-    padding:10px;
-  }
-=======
-
->>>>>>> 442b1f3364ea7159356c117a07a29bba1ac9e5aa
   .logogxx{
       height: 25px;
       /* width: 40px; */
@@ -54,10 +13,6 @@
       /* background: white; */
       /* border-radius: 5px; */
       margin: 10px;
-<<<<<<< HEAD
-      display:none;
-=======
->>>>>>> 442b1f3364ea7159356c117a07a29bba1ac9e5aa
       
   }
   .imgmenuxx{
@@ -69,26 +24,8 @@
       margin: 5px;
       margin-left: 85%;
       display:none;
-<<<<<<< HEAD
-      cursor:pointer;
 
   }
-  .imgmenuxxx{
-    height: 35px;
-    /* width: 40px; */
-    position: absolute;
-    background: white;
-    padding: 10px;border-radius: 5px;
-    margin: 5px;
-    margin-left: 75%;
-    display:none;
-    cursor:pointer;
-
-}
-=======
-
-  }
->>>>>>> 442b1f3364ea7159356c117a07a29bba1ac9e5aa
   .midle1{
     height:50px;
     width:50px;
@@ -105,11 +42,7 @@
 }
 #sericon{
   height: 38px;padding: 10px;
-<<<<<<< HEAD
-  background: #2a9799;
-=======
   background: rgb(42, 151, 153);
->>>>>>> 442b1f3364ea7159356c117a07a29bba1ac9e5aa
   border-radius: 50px;margin-top: -40px;
   z-index:2000;position: absolute;
   margin-left: 320px;
@@ -975,10 +908,6 @@ div .product-item div.pi-pic{
   margin: auto;
   position: absolute;
    */
-<<<<<<< HEAD
-  /* margin-left: 30%; */
-=======
->>>>>>> 442b1f3364ea7159356c117a07a29bba1ac9e5aa
 }
   /**********************************************************
                     Deal of the week
@@ -1226,31 +1155,10 @@ div .product-item div.pi-pic{
     margin-top: -20px;
     margin-left: 100px;
   }
-<<<<<<< HEAD
-  .imgmenuxx{
-    display:block;
-    margin-left:75%;
-  }
- 
-}
-
-@media screen and (max-width:582px){
-
-  .containxx{
-    border:1px solid;
-    width:fit-content;
-    top:0;
-    right:0;
-    margin:auto;
-
-  }
-
-=======
   
 }
 
 @media screen and (max-width:582px){
->>>>>>> 442b1f3364ea7159356c117a07a29bba1ac9e5aa
   .form-control{
       width:200px;
   }
@@ -1261,19 +1169,6 @@ div .product-item div.pi-pic{
       width: 300px;
        margin-top: 20px;
   }
-<<<<<<< HEAD
-  .imgcen{
-    height:auto;
-    border: 1px solid;
-     margin:auto;
-    /* width: fit-content;  */
-     top:0;right:0;left:0;
-  }
-  .logogxx{
-    display:block;
-  }
-=======
->>>>>>> 442b1f3364ea7159356c117a07a29bba1ac9e5aa
 #sericon{
   margin-left: 230px;  
 }
@@ -1287,11 +1182,5 @@ div.header-logo a.logo1 img {
      display: block;
   }
 
-<<<<<<< HEAD
-  /* .product-item div{
-    margin-left: 50%;
-  } */
-=======
 
->>>>>>> 442b1f3364ea7159356c117a07a29bba1ac9e5aa
 }

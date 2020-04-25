@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+                       </div>
+=======
 <?php
 
 /***********************************
@@ -5,7 +8,7 @@
       ***********************************/
       
   
-   
+  
   
   
   
@@ -32,16 +35,8 @@
 
 <body>
     <!-- Page Preloder -->
-    <div class="menustick">
-        <ul class="ul">
-            <li class="li"><a class="a" href="#">Products</a></li>
-            <li class="li"><a class="a" href="#">Tuaguagye</a></li>
-            <li class="li"><a class="a" href="#">Catergories</a></li>
-            <li class="li"><a class="a" href="#">others</a></li>
-            <li class="li"><a class="a" href="#">Support</a></li>
-        </ul>
-    </div>
-   
+  
+
 
 <link href="//i.alicdn.com/ae-header/20191217202516/buyer/glofront/ae-header.css" rel="stylesheet" type="text/css" />
 <div class="site-download-header" data-spm="100067" id="j-site-download-header" style="display:none;"><a href="#"><img data-src="#" /></a></div>
@@ -233,12 +228,10 @@
          <nav class="site-header sticky-top py-1 bootstrap-nav ">
       <div class="container d-flex flex-column flex-md-row justify-content-between">
           <img class="imgmenuxx" src="img/menu.png">
-          <img class="imgmenuxxx" id="closex" src="img/cancel.png">
-
-         
-          <img class="midle1" src="img/logo1.png" alt="" srcset="">
-         
-          <!-- <img class="logogxx" src="./img/menu2.png" alt=""> -->
+          <center>
+              <img class="midle1" src="img/logo1.png" alt="" srcset="">
+          </center>
+          <img class="logogxx" src="./img/menu2.png" alt="">
 
 
         <a class="py-2 d-none d-md-inline-block" href="product.php">Products</a>
@@ -247,13 +240,10 @@
         <a class="py-2 d-none d-md-inline-block" href="#">others</a>
         <a class="py-2 d-none d-md-inline-block" href="#">Support</a>
 
-    
 
     </nav>
 
     <!-- Header End -->
-
-   
 
     <!-- Hero Section Begin -->
     <section class="hero-section">
@@ -281,6 +271,7 @@
                          
                             <a href="./product.php" class="primary-btn" style="background-color: rgb(42, 151, 153);">Shop Now</a>
                         </div>
+>>>>>>> 442b1f3364ea7159356c117a07a29bba1ac9e5aa
                     </div>
                         
                 </div>
