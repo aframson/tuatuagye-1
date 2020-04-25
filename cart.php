@@ -371,7 +371,7 @@ if ($connect->connect_error) {
                             $id = $_GET['product_id'];
                                 }
                                 else $id = 53;
-                    $query = "SELECT * FROM oc_product WHERE product_id = $id";
+                    $query = "SELECT * FROM ttg_product WHERE product_id = $id";
                     $result = mysqli_query($connect, $query);
                     if (!$result) {
                    echo mysqli_error($connect) ;

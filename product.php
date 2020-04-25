@@ -86,7 +86,7 @@ Class recently_viewed {
 <html lang="eng">
 
 <head>
-           <?php include_once 'header.php';  
+        <?php include_once 'header.php';  
         get_title('products');
         ?>
 </head>
@@ -107,7 +107,7 @@ Class recently_viewed {
 
 <link href="//i.alicdn.com/ae-header/20191217202516/buyer/glofront/ae-header.css" rel="stylesheet" type="text/css" />
 <div class="site-download-header" data-spm="100067" id="j-site-download-header" style="display:none;"><a href="#"><img data-src="#" /></a></div>
-
+<!-- <link rel="stylesheet" href="embedded.css"> -->
 <div class="top-lighthouse" data-spm="1000001" id="top-lighthouse" style="z-index: 3000000">
 	<div class="top-lighthouse-wrap container">
 		<div class="nav-global" id="nav-global">
@@ -416,7 +416,6 @@ Class recently_viewed {
      while ($row = mysqli_fetch_array($result)) {
     $output .= ' 
    
-                                                 <div class="col-lg-3 col-sm-6">
                     <div class="product-item">
                         <div class="pi-pic">
                           <img src="http://tuatuagye.brichghana.com/upload/image/'.$row["image"].'" alt="">
@@ -442,7 +441,7 @@ Class recently_viewed {
                             </div>
                         </div>
                     </div>
-                </div> ';
+                 ';
         // check if more than 0 record found
        
 	 }
@@ -649,6 +648,8 @@ Class recently_viewed {
         </div>
   
     </footer>
+    <link rel="stylesheet" href="css/embedded.css" type="text/css">
+
     <!-- Footer Section End -->
 
 

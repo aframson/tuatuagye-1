@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 </head>
 
 <body>
@@ -37,11 +38,11 @@
                 <div class="ht-left">
                     <div class="mail-service">
                         <i class=" fa fa-envelope"></i>
-                        hello.colorlib@gmail.com
+                        support@tuatuagye.com
                     </div>
                     <div class="phone-service">
                         <i class=" fa fa-phone"></i>
-                        +65 11.188.888
+                        +233 277500001
                     </div>
                 </div>
                 <div class="ht-right">
@@ -63,83 +64,7 @@
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="inner-header">
-                <div class="row">
-                    <div class="col-lg-2 col-md-2">
-                        <div class="logo">
-                            <a href="./index.html">
-                                <img src="img/logo.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-7 col-md-7">
-                        <div class="advanced-search">
-                            <button type="button" class="category-btn">All Categories</button>
-                            <form action="#" class="input-group">
-                                <input type="text" placeholder="What do you need?">
-                                <button type="button"><i class="ti-search"></i></button>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 text-right col-md-3">
-                        <ul class="nav-right">
-                            <li class="heart-icon"><a href="#">
-                                    <i class="icon_heart_alt"></i>
-                                    <span>1</span>
-                                </a>
-                            </li>
-                            <li class="cart-icon"><a href="#">
-                                    <i class="icon_bag_alt"></i>
-                                    <span>3</span>
-                                </a>
-                                <div class="cart-hover">
-                                    <div class="select-items">
-                                        <table>
-                                            <tbody>
-                                                <tr>
-                                                    <td class="si-pic"><img src="img/select-product-1.jpg" alt=""></td>
-                                                    <td class="si-text">
-                                                        <div class="product-selected">
-                                                            <p>$60.00 x 1</p>
-                                                            <h6>Kabino Bedside Table</h6>
-                                                        </div>
-                                                    </td>
-                                                    <td class="si-close">
-                                                        <i class="ti-close"></i>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="si-pic"><img src="img/select-product-2.jpg" alt=""></td>
-                                                    <td class="si-text">
-                                                        <div class="product-selected">
-                                                            <p>$60.00 x 1</p>
-                                                            <h6>Kabino Bedside Table</h6>
-                                                        </div>
-                                                    </td>
-                                                    <td class="si-close">
-                                                        <i class="ti-close"></i>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <div class="select-total">
-                                        <span>total:</span>
-                                        <h5>$120.00</h5>
-                                    </div>
-                                    <div class="select-button">
-                                        <a href="#" class="primary-btn view-card">VIEW CARD</a>
-                                        <a href="#" class="primary-btn checkout-btn">CHECK OUT</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="cart-price">$150.00</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+           
         <div class="nav-item">
             <div class="container">
                 <div class="nav-depart">
@@ -218,46 +143,46 @@
                         <div class="row">
                             <div class="col-lg-6">
                                 <label for="fir">First Name<span>*</span></label>
-                                <input type="text" id="fir">
+                                <input type="text" name = 'fname' id="fir">
                             </div>
                             <div class="col-lg-6">
                                 <label for="last">Last Name<span>*</span></label>
-                                <input type="text" id="last">
+                                <input type="text" name="lname" id="last">
                             </div>
                             <div class="col-lg-12">
                                 <label for="cun-name">Company Name</label>
-                                <input type="text" id="cun-name">
+                                <input type="text" name ="cname" id="cun-name">
                             </div>
                             <div class="col-lg-12">
                                 <label for="cun">Country<span>*</span></label>
-                                <input type="text" id="cun">
+                                <input type="text" name="country" id="cun">
                             </div>
                             <div class="col-lg-12">
                                 <label for="street">Street Address<span>*</span></label>
-                                <input type="text" id="street" class="street-first">
-                                <input type="text">
+                                <input type="text" id="street" name="str1" class="street-first">
+                                <input type="text" name="str2">
                             </div>
                             <div class="col-lg-12">
                                 <label for="zip">Postcode / ZIP (optional)</label>
-                                <input type="text" id="zip">
+                                <input type="text" name="pcode" id="zip">
                             </div>
                             <div class="col-lg-12">
                                 <label for="town">Town / City<span>*</span></label>
-                                <input type="text" id="town">
+                                <input type="text" name="city" id="town">
                             </div>
                             <div class="col-lg-6">
                                 <label for="email">Email Address<span>*</span></label>
-                                <input type="text" id="email">
+                                <input type="text" name="email" id="email">
                             </div>
                             <div class="col-lg-6">
                                 <label for="phone">Phone<span>*</span></label>
-                                <input type="text" id="phone">
+                                <input type="text" name="phone" id="phone">
                             </div>
                             <div class="col-lg-12">
                                 <div class="create-item">
                                     <label for="acc-create">
                                         Create an account?
-                                        <input type="checkbox" id="acc-create">
+                                        <input  type="checkbox" id="acc-create">
                                         <span class="checkmark"></span>
                                     </label>
                                 </div>
@@ -266,18 +191,17 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="checkout-content">
-                            <input type="text" placeholder="Enter Your Coupon Code">
+                            <input name="coup" type="text" placeholder="Enter Your Coupon Code">
                         </div>
+                       
                         <div class="place-order">
                             <h4>Your Order</h4>
                             <div class="order-total">
                                 <ul class="order-table">
+                                   
                                     <li>Product <span>Total</span></li>
-                                    <li class="fw-normal">Combination x 1 <span>$60.00</span></li>
-                                    <li class="fw-normal">Combination x 1 <span>$60.00</span></li>
-                                    <li class="fw-normal">Combination x 1 <span>$120.00</span></li>
-                                    <li class="fw-normal">Subtotal <span>$240.00</span></li>
-                                    <li class="total-price">Total <span>$240.00</span></li>
+                                     <?php include 'engine.php';?>
+                                    
                                 </ul>
                                 <div class="payment-check">
                                     <div class="pc-item">
@@ -351,9 +275,9 @@
                             <a href="#"><img src="img/footer-logo.png" alt=""></a>
                         </div>
                         <ul>
-                            <li>Address: 60-49 Road 11378 New York</li>
-                            <li>Phone: +65 11.188.888</li>
-                            <li>Email: hello.colorlib@gmail.com</li>
+                            <li>Address:  347 Scorpion, Tabora-Accra</li>
+                            <li>Phone: +233 277500001</li>
+                            <li>Email:support@tuatuagye.com</li>
                         </ul>
                         <div class="footer-social">
                             <a href="#"><i class="fa fa-facebook"></i></a>

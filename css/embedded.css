@@ -3,7 +3,72 @@ html, body{
 }
 
 
+.nav-item{
+  background: rgb(42, 151, 153);
+}
+
 /* my updates */
+.elemimg{
+  height: 80px;
+}
+.name:hover{
+    background: rgb(218, 218, 218);
+}
+.elems{
+  display: flex;
+  border-radius:5px;
+  overflow: hidden;
+  box-shadow: 0.001rem 0.001rem 5px gray;
+background: white;
+cursor: pointer;
+margin-top: 10px;
+}
+.cate{
+  color: gray;
+  font-size: 12px;
+}
+.ltxt{
+  font-size: 20px;
+  font-weight: bold;
+}
+.name{
+  border-left: 1px solid rgb(189, 189, 189);
+  width: 100%;
+  padding: 10px;
+  background: white;
+
+}
+.errorx{
+  font-size: 25;
+  color:red;
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+}
+.searchdrop{
+width: 450px;
+height: 300px;
+padding: 10px;
+/* border: 1px solid; */
+overflow: scroll;
+scroll-padding-bottom: none;
+top: 0;
+right: 0;
+left: 0;
+margin: auto;
+position: absolute;
+z-index:10000;
+margin-top: 140px;
+background: white;
+}
+
+
+#cartmenu{
+   /* border: 1px solid; */
+   width: 110%;
+   margin-left:0px;
+}
+
 
 .li:hover{
 background:#32ced1 ;transition: 0.3s;
@@ -949,7 +1014,7 @@ color: white;
 /**********************************************************/
 
 div .product-item div.pi-pic{
-width: 258px;
+width: 358px;
 height: 315px;
 background: white;
 } 
