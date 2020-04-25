@@ -1,0 +1,37 @@
+[29-Feb-2020 19:15:13 UTC] PHP Warning:  Unterminated comment starting line 5 in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/database.php on line 5
+[29-Feb-2020 19:15:13 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/database.php on line 3
+[29-Feb-2020 19:15:43 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/database.php on line 3
+[29-Feb-2020 19:15:43 UTC] PHP Notice:  Trying to get property 'connect_error' of non-object in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/database.php on line 8
+[04-Mar-2020 11:47:41 UTC] PHP Notice:  Undefined index: vxkgn0fmfwww in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/slydepay_buy.php on line 14
+[04-Mar-2020 11:47:41 UTC] PHP Notice:  Undefined index: >##e(a}T%5P in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/slydepay_buy.php on line 15
+[04-Mar-2020 11:47:41 UTC] PHP Notice:  Undefined index: localhost in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/slydepay_buy.php on line 16
+[04-Mar-2020 11:47:41 UTC] PHP Notice:  Undefined index: TuaTuaGye Data in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/slydepay_buy.php on line 17
+[04-Mar-2020 11:47:41 UTC] PHP Notice:  Undefined offset: 3306 in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/slydepay_buy.php on line 18
+[04-Mar-2020 11:47:46 UTC] PHP Fatal error:  Uncaught SoapFault exception: [WSDL] SOAP-ERROR: Parsing WSDL: Couldn't load from 'https://app.slydepay.com.gh/webservices/paymentservice.asmx?wsdl' : failed to load external entity "https://app.slydepay.com.gh/webservices/paymentservice.asmx?wsdl"
+ in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/includes/iwallet/lib/iwallet/IwalletConnector.class.php:28
+Stack trace:
+#0 /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/includes/iwallet/lib/iwallet/IwalletConnector.class.php(28): SoapClient->SoapClient('https://app.sly...', Array)
+#1 /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/slydepay_buy.php(67): IwalletConnector->__construct('http://www.i-wa...', 'https://app.sly...', '1.4', 'tuatuagye@gmail...', '1575681072269', 'C2B', '')
+#2 {main}
+  thrown in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/includes/iwallet/lib/iwallet/IwalletConnector.class.php on line 28
+[04-Mar-2020 12:01:58 UTC] PHP Fatal error:  Uncaught SoapFault exception: [WSDL] SOAP-ERROR: Parsing WSDL: Couldn't load from 'https://app.slydepay.com.gh/webservices/paymentservice.asmx?wsdl' : failed to load external entity "https://app.slydepay.com.gh/webservices/paymentservice.asmx?wsdl"
+ in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/includes/iwallet/lib/iwallet/IwalletConnector.class.php:28
+Stack trace:
+#0 /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/includes/iwallet/lib/iwallet/IwalletConnector.class.php(28): SoapClient->SoapClient('https://app.sly...', Array)
+#1 /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/slydepay_buy.php(67): IwalletConnector->__construct('http://www.i-wa...', 'https://app.sly...', '1.4', 'tuatuagye@gmail...', '1575681072269', 'C2B', '')
+#2 {main}
+  thrown in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/includes/iwallet/lib/iwallet/IwalletConnector.class.php on line 28
+[04-Mar-2020 12:39:40 UTC] PHP Fatal error:  Uncaught SoapFault exception: [WSDL] SOAP-ERROR: Parsing WSDL: Couldn't load from 'https://app.slydepay.com.gh/webservices/paymentservice.asmx?wsdl' : failed to load external entity "https://app.slydepay.com.gh/webservices/paymentservice.asmx?wsdl"
+ in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/includes/iwallet/lib/iwallet/IwalletConnector.class.php:28
+Stack trace:
+#0 /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/includes/iwallet/lib/iwallet/IwalletConnector.class.php(28): SoapClient->SoapClient('https://app.sly...', Array)
+#1 /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/slydepay_buy.php(72): IwalletConnector->__construct('http://www.i-wa...', 'https://app.sly...', '1.4', 'tuatuagye@gmail...', '1575681072269', 'C2B', '')
+#2 {main}
+  thrown in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/includes/iwallet/lib/iwallet/IwalletConnector.class.php on line 28
+[14-Mar-2020 15:08:45 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/slydepay_buy.php on line 128
+[14-Mar-2020 15:12:03 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/slydepay_buy.php on line 128
+[14-Mar-2020 15:14:44 UTC] PHP Fatal error:  Uncaught Error: Call to a member function dispense() on null in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/includes/rb.php:9477
+Stack trace:
+#0 /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/slydepay_buy.php(32): RedBean_Facade::dispense('donation')
+#1 {main}
+  thrown in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/includes/rb.php on line 9477

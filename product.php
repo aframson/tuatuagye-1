@@ -706,8 +706,6 @@ Class recently_viewed {
                                 });
 
           });
-
-
                             </script>
 </body>
 
