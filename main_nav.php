@@ -5,7 +5,6 @@ function get_nav($sth){
     
     echo '
  
-    
 
 <div class="add-to-cart">
  <!--top header navbar-->

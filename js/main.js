@@ -1,11 +1,3 @@
-/*  ---------------------------------------------------
-    Template Name: Fashi
-    Description: Fashi eCommerce HTML Template
-    Author: Colorlib
-    Author URI: https://colorlib.com/
-    Version: 1.0
-    Created: Colorlib
----------------------------------------------------------  */
 
 'use strict';
 
@@ -16,47 +8,77 @@
 
 
 
+  $('#submitch').click(function (e) {
+      
+   
+    e.preventDefault();
+
+    $.ajax({
+          url:"billing",
+          method:"post",
+          dataType:"text",
+          data:$('#checkform').serialized(),
+          beforeSend:function (params) {
+              
+             },
+          success:function (data) {
+                alert("data succesfully submited");
+                alert(data)
+          }
+    })
 
 
-    $('').click(function (params) {
           
 
-           $.ajax({
-                url:"engine.php",
-                method:""
-           })
+  })
+
+
+
+
+
+
+
+
+
+    // $('').click(function (params) {
+          
+
+    //        $.ajax({
+    //             url:"engine.php",
+    //             method:""
+    //        })
         
          
-    })
+    // })
 
 
-    $('.name').click(function (params) {
+    // $('.name').click(function (params) {
              
-        $(".hero-section").fadeOut(300);
-        $(".searchdrop").fadeOut(300)
+    //     $(".hero-section").fadeOut(300);
+    //     $(".searchdrop").fadeOut(300)
 
-        var id =this.id;
-        var splitid = id.split(":");
-        var mainId = splitid[1];
+    //     var id =this.id;
+    //     var splitid = id.split(":");
+    //     var mainId = splitid[1];
 
 
-        $.ajax({
-            url:"",
-            method:"post",
-            dataType:"text",
-            data:{mainid:mainId},
-            beforeSend:function (params) {
+    //     $.ajax({
+    //         url:"",
+    //         method:"post",
+    //         dataType:"text",
+    //         data:{mainid:mainId},
+    //         beforeSend:function (params) {
                 
-            },
-            success:function (response) {
-                $("#urow").html(response);
-         }
-        })
+    //         },
+    //         success:function (response) {
+    //             $("#urow").html(response);
+    //      }
+    //     })
         
 
 
 
-    })
+    // })
 
 
 
@@ -79,7 +101,7 @@
             
         }else{
             $.ajax({
-                url:"livesearch.php",
+                url:"livesearch",
                 method:"post",
                 dataType:'text',
                 data: {data:value},
