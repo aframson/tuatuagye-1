@@ -3,6 +3,20 @@ html, body{
 }
 
 
+
+.titlep{
+  height: 40px;
+  width: 100%;
+  text-align: center;
+  justify-items: center;
+  background: rgb(42, 151, 153);
+  padding: 7px;
+}
+#paytxt{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   color: white;
+   font-size: 15px;
+}
 .nav-item{
   background: rgb(42, 151, 153);
 }

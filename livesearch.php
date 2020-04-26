@@ -9,6 +9,7 @@ $search = mysqli_query($con,"SELECT * FROM products WHERE show_name LIKE '%".$va
 
 
 if (mysqli_num_rows($search) > 1) {
+    
     while ($row = mysqli_fetch_array($search)) {
         echo '
         <script>
@@ -22,7 +23,7 @@ if (mysqli_num_rows($search) > 1) {
             var mainId = splitid[1];
     
             $.ajax({
-                url:"showsearch.php",
+                url:"showsearch",
                 method:"post",
                 dataType:"text",
                 data:{mainid:mainId},
