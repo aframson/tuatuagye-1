@@ -1,0 +1,85 @@
+[20-Mar-2020 13:57:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Product::read_one() in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/products/read_one.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/products/read_one.php on line 21
+[20-Mar-2020 13:59:09 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Product::read_one() in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/products/read_one.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/products/read_one.php on line 23
+[20-Mar-2020 13:59:11 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Product::read_one() in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/products/read_one.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/products/read_one.php on line 23
+[20-Mar-2020 13:59:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Product::read_one() in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/products/read_one.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/products/read_one.php on line 23
+[20-Mar-2020 13:59:30 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Product::read_one() in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/products/read_one.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/products/read_one.php on line 23
+[20-Mar-2020 14:08:31 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Product::readOne() in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/products/read_one.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/products/read_one.php on line 22
+[20-Mar-2020 14:08:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Product::readOne() in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/products/read_one.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/products/read_one.php on line 22
+[20-Mar-2020 14:09:49 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Product::readOne() in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/products/read_one.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/products/read_one.php on line 24
+[20-Mar-2020 14:09:51 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Product::readOne() in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/products/read_one.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/products/read_one.php on line 24
+[20-Mar-2020 14:09:52 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Product::readOne() in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/products/read_one.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/products/read_one.php on line 24
+[20-Mar-2020 14:09:53 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Product::readOne() in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/products/read_one.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/products/read_one.php on line 24
+[20-Mar-2020 14:09:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Product::readOne() in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/products/read_one.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/products/read_one.php on line 24
+[20-Mar-2020 14:09:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Product::readOne() in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/products/read_one.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/products/read_one.php on line 24
+[20-Mar-2020 14:09:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Product::readOne() in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/products/read_one.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/products/read_one.php on line 24
+[20-Mar-2020 14:09:57 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Product::readOne() in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/products/read_one.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/products/read_one.php on line 24
+[20-Mar-2020 14:09:57 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Product::readOne() in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/products/read_one.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/products/read_one.php on line 24
+[20-Mar-2020 14:09:58 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Product::readOne() in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/products/read_one.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/products/read_one.php on line 24
+[20-Mar-2020 14:09:59 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Product::readOne() in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/products/read_one.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/products/read_one.php on line 24
+[20-Mar-2020 14:12:06 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Product::read1One() in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/products/read_one.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/products/read_one.php on line 25
+[20-Mar-2020 14:12:34 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Product::read_One() in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/products/read_one.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/products/read_one.php on line 25
+[20-Mar-2020 14:14:55 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC), expecting end of file in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/objects/product.php on line 237
+[20-Mar-2020 14:14:58 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC), expecting end of file in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/objects/product.php on line 237
+[20-Mar-2020 14:15:17 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC), expecting end of file in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/objects/product.php on line 271
+[20-Mar-2020 14:16:05 UTC] PHP Fatal error:  Cannot redeclare Product::read_One() in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/objects/product.php on line 93
+[20-Mar-2020 14:18:10 UTC] PHP Fatal error:  Cannot redeclare count() in /home/vxkgn0fmfwww/public_html/tuatuagye.com/api/objects/product.php on line 274

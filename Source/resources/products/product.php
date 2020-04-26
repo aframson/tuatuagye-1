@@ -3,7 +3,7 @@
 //its very likey at this point the user has already visited home and started a session
 //session_start();
 if (empty($_SESSION['username'])){
-    $_SESSION['username'] = $_SERVER['REMOTE_ADDR'];
+    $_SESSION['username_remote_addr'] = $_SERVER['REMOTE_ADDR'];
 }
 
 
@@ -217,62 +217,35 @@ else echo "the product id didn't come";
 
 
 /**********
- * header
+ * login
  **************/
 
-function set_header(){
-      
-if (!empty($_POST['title'])){
-    
-$title = $_POST['title'] ;
+function ttg_login(){
+$dbhost = 'localhost';
+$dbuser = 'vxkgn0fmfwww';
+$dbpass = '>##e(a}T%5P';
+$dbname="TuaTuaGye Data";
+$connect  = mysqli_connect($dbhost, $dbuser, $dbpass,$dbname);
 
 
+ $user  = $_POST['username']   ;
+ $paswword  = $_POST['password']   ;
+ $keepMeSignedIn  = $_POST['keepMeSignedIn']   ;
+
+
+$query = "SELECT * FROM oc_user WHERE username = $user";
+                    $result = mysqli_query($connect, $query);
+                    if (!$result) {
+                   echo '<script> console.log('.mysqli_error($connect).');</script>';
+                   // exit();
+                }
+                    $row = mysqli_fetch_array($result);
+        
+
+                     while ($row = mysqli_fetch_array($result)) {
+                         $_SESSION['username'] =$row['user'];
+                         $_SESSION['name'] =$row['firstname'];
+                     
 }
-else {$title = "online web store"; }
-
-echo '
-   <meta charset="UTF-8">
-    <meta name="description" content="Tuatuagye">
-    <meta name="keywords" content="Tuatuagye, BRICH, webapp, javascript">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tuatuagye | '.$title.'</title>
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css"
-        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
-    <!-- Css Styles -->
-    <link rel="stylesheet" href="css/electro.css" type="text/css">
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/themify-icons.css" type="text/css">
-    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
-    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
-    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
-    <link href="css/material-dashboard.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/materialdemo.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/embedded.css" type="text/css">
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PY66NSKPP7"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag("j", new Date());
-
-        gtag("config", "G-PY66NSKPP7");
-    </script>
-
-';
-
-
+                echo 1;
 }
-

@@ -390,22 +390,27 @@ if ($connect->connect_error) {
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="product-pic-zoom">
+<<<<<<< HEAD
                                   <img class="product-big-img" src="http://tuatuagye.com/upload/image/'.$row["image"].'" alt="">
                                  <div class="zoom-icon">
+=======
+                                  <img class="product-big-img" src="http://tuatuagye.brichghana.com//upload/image/'.$row["image"].'" alt="">
+                                <div class="zoom-icon">
+>>>>>>> 178ec972ee0dc1c925427bd954e8fe9d203d77b3
                                     <i class="fa fa-search-plus"></i>
                                  </div>
                             </div>
                             <div class="product-thumbs">
                                 <div class="product-thumbs-track ps-slider owl-carousel">
-                                    <div class="pt active" data-imgbigurl="http://tuatuagye.com/upload/image/'.$row["image"].'"><img
-                                            src="http://tuatuagye.com/upload/image/'.$row["image"].'" alt=""></div>
+                                    <div class="pt active" data-imgbigurl="http://tuatuagye.brichghana.com//upload/image/'.$row["image"].'"><img
+                                            src="http://tuatuagye.brichghana.com/upload/image/'.$row["image"].'" alt=""></div>
 
                                             
-                                    <div class="pt" data-imgbigurl="http://tuatuagye.com/upload/image/'.$row["image"].'"><img
-                                            src="http://tuatuagye.com/upload/image/'.$row["image"].'" alt=""></div>
-                                    <div class="pt" data-imgbigurl="http://tuatuagye.com/upload/image/'.$row["image"].'"><img
-                                            src="http://tuatuagye.com/upload/image/'.$row["image"].'" alt=""></div>
-                                    <div class="pt" data-imgbigurl="http://tuatuagye.com/upload/image/'.$row["image"].'"><img
+                                    <div class="pt" data-imgbigurl="http://tuatuagye.brichghana.com//upload/image/'.$row["image"].'"><img
+                                            src="http:/tuatuagye.brichghana.com/upload/image/'.$row["image"].'" alt=""></div>
+                                    <div class="pt" data-imgbigurl="http://tuatuagye.brichghana.com/upload/image/'.$row["image"].'"><img
+                                            src="http://tuatuagye.brichghana.com/upload/image/'.$row["image"].'" alt=""></div>
+                                    <div class="pt" data-imgbigurl="http://tuatuagye.brichghana.com//upload/image/'.$row["image"].'"><img
                                             src="http://tuatuagye.com/upload/image/'.$row["image"].'" alt=""></div>
                                 </div>
                             </div>
