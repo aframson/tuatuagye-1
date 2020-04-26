@@ -238,7 +238,7 @@
         
         </div>
 
-         <nav class="site-header sticky-top py-1 bootstrap-nav ">
+<nav class="site-header sticky-top py-1 bootstrap-nav ">
       <div class="container d-flex flex-column flex-md-row justify-content-between">
           <img class="imgmenuxx" src="img/menu.png">
           <img class="imgmenuxxx" id="closex" src="img/cancel.png">
@@ -249,7 +249,7 @@
           <!-- <img class="logogxx" src="./img/menu2.png" alt=""> -->
 
 
-        <a class="py-2 d-none d-md-inline-block" href="product.php">Products</a>
+        <a class="py-2 d-none d-md-inline-block" href="product">Products</a>
         <a class="py-2 d-none d-md-inline-block" href="#">Tuaguagye</a>
         <a class="py-2 d-none d-md-inline-block" href="#">Catergories</a>
         <a class="py-2 d-none d-md-inline-block" href="#">others</a>
@@ -257,7 +257,7 @@
 
     
 
-    </nav>
+</nav>
 
     <!-- Header End -->
 
@@ -274,7 +274,7 @@
                             <span style="color: rgb(42, 151, 153);">Tuatuagye</span>
                             <h6 style ="color:white">Super fast Delivery</h2>
                       
-                            <a href="./product.php" class="primary-btn" style="background-color: rgb(42, 151, 153);">Shop Now</a>
+                            <a href="./product" class="primary-btn" style="background-color: rgb(42, 151, 153);">Shop Now</a>
                         </div>
                     </div>
                         
@@ -287,7 +287,7 @@
                            <span style="color: rgb(42, 151, 153);">Tuatuagye</span>
                             <h6 style ="color:white">Super fast Delivery</h2>
                          
-                            <a href="./product.php" class="primary-btn" style="background-color: rgb(42, 151, 153);">Shop Now</a>
+                            <a href="./product" class="primary-btn" style="background-color: rgb(42, 151, 153);">Shop Now</a>
                         </div>
                     </div>
                         
@@ -300,7 +300,7 @@
                            <span style="color: rgb(42, 151, 153);">Tuatuagye</span>
                             <h6 style ="color:black">Super fast Delivery</h2>
                         
-                            <a href="./product.php" class="primary-btn" style="background-color: rgb(42, 151, 153);">Shop Now</a>
+                            <a href="./product" class="primary-btn" style="background-color: rgb(42, 151, 153);">Shop Now</a>
                         </div>
                     </div>
                         
@@ -313,7 +313,7 @@
                            <span style="color: rgb(42, 151, 153);">Tuatuagye</span>
                             <h6 style ="color:black">Super fast Delivery</h2>
                    
-                            <a href="./product.php" class="primary-btn" style="background-color: rgb(42, 151, 153);">Shop Now</a>
+                            <a href="./product" class="primary-btn" style="background-color: rgb(42, 151, 153);">Shop Now</a>
                         </div>
                     </div>
                         
@@ -326,7 +326,7 @@
                            <span style="color: rgb(42, 151, 153);">Tuatuagye</span>
                             <h6 style ="color:black">Super fast Delivery</h6>
                    
-                            <a href="./product.php" class="primary-btn" style="background-color: rgb(42, 151, 153);">Shop Now</a>
+                            <a href="./product" class="primary-btn" style="background-color: rgb(42, 151, 153);">Shop Now</a>
                         </div>
                     </div>
                         
@@ -339,7 +339,7 @@
                            <span style="color: rgb(42, 151, 153);">Tuatuagye</span>
                             <h6 style ="color:white">Super fast Delivery</h6>
                        
-                            <a href="./product.php" class="primary-btn" style="background-color: rgb(42, 151, 153);">Shop Now</a>
+                            <a href="./product" class="primary-btn" style="background-color: rgb(42, 151, 153);">Shop Now</a>
                         </div>
                     </div>
                         
@@ -556,7 +556,7 @@
                         <p>Secs</p>
                     </div>
                 </div>
-                <a href="./product.php" class="primary-btn" style="background-color: rgb(42, 151, 153);">Bid Now</a>
+                <a href="./product" class="primary-btn" style="background-color: rgb(42, 151, 153);">Bid Now</a>
             </div>
         </div>
     </section>
@@ -797,7 +797,7 @@
                 $('.myadd.clearfix').click(function (e) { 
         e.preventDefault();
        // $(this).hide('slow');
-       window.location = "./auth/secure/pages/let_me_in/login.php";
+       window.location = "./auth/secure/pages/let_me_in/login";
         
     });
         </script>

@@ -93,21 +93,26 @@ Class recently_viewed {
 
 <body>
     <!-- Page Preloder -->
-    <div id="preloder">
-        <div class="loader"></div>
+    <!-- Page Preloder -->
+
+    <div class="menustick">
+        <ul class="ul">
+            
+            <li class="li"><a class="a" href="#">Your Cart</a></li>
+            <li class="li"><a class="a" href="#">Your wishlist</a></li>
+            <li class="li"><a class="a" href="#">ttgCoin</a></li>
+            <li class="li"><a class="a" href="#">Products</a></li>
+            <li class="li"><a class="a" href="#">Tuaguagye</a></li>
+            <li class="li"><a class="a" href="#">Catergories</a></li>
+            <li class="li"><a class="a" href="#">others</a></li>
+            <li class="li"><a class="a" href="#">Support</a></li>
+        </ul>
     </div>
-    <div class="google index" style="display:none">
-<p>
-    Welcome to Tuatuagye, your one stop online store. Shop items and pay in installment.
-    Sign in to <a href="#">Tuatuagye</a> Buy phones, 44" digital TV, freezer, blender, kettle etc.
-</p>
-
-
-</div>
+   
 
 <link href="//i.alicdn.com/ae-header/20191217202516/buyer/glofront/ae-header.css" rel="stylesheet" type="text/css" />
 <div class="site-download-header" data-spm="100067" id="j-site-download-header" style="display:none;"><a href="#"><img data-src="#" /></a></div>
-<!-- <link rel="stylesheet" href="embedded.css"> -->
+
 <div class="top-lighthouse" data-spm="1000001" id="top-lighthouse" style="z-index: 3000000">
 	<div class="top-lighthouse-wrap container">
 		<div class="nav-global" id="nav-global">
@@ -168,7 +173,7 @@ Class recently_viewed {
 
 							<p class="flyout-sign-out" data-role="signout-btn"><a href="#" rel="nofollow">Sign Out</a></p>
 
-							<p class="flyout-bottons"><a class="join-btn" data-role="join-link" href="javaScript:;" rel="nofollow" style=" background-color: rgb(42, 151, 153);">Join</a> <a class="sign-btn" data-role="sign-link" href="#" rel="nofollow" style="margin:0;" style=" background-color: rgb(42, 151, 153);">Sign in</a></p>
+							<p class="flyout-bottons"><a class="join-btn" data-role="join-link" href="javaScript:;" rel="nofollow" style=" background: rgb(42, 151, 153);">Join</a> <a class="sign-btn" data-role="sign-link" href="#" rel="nofollow" style="margin:0;" style=" background: rgb(42, 151, 153);">Sign in</a></p>
 						</div>
 						<i class="flyout-line">&nbsp;</i>
 						<ul class="flyout-quick-entry" data-role="quick-entry">
@@ -230,7 +235,7 @@ Class recently_viewed {
 <button class="open-button" id="thebutton"  data-toggle="modal" data-target="#1_ModalCenter" onclick="openForm()" style="display:none">Chat</button>
 
 <div class="chat-popup" id="myForm" style="background-image:url(img/bg.png)">
-  <form action="" id="chatmessage" class="form-container" style="background-image:url(img/bg.png)">
+  <form action="" id="chatmessage" class="form-container" style="background-image:url(img/bg.PNG)">
     <h3>Hello</h3>
 
     <label for="msg"><b>How may I assist you?</b></label>
@@ -244,133 +249,42 @@ Class recently_viewed {
 <div class="modal fade" id="1_ModalCenter" tabindex="-1" role="dialog" aria-labelledby="1_ModalCenterTitle" aria-hidden="true">
 </div>
 
-<div class="add-to-cart">
- <!--top header navbar-->
-<div class="header d-flex"  style=" background-image: url(img/bg.PNG); " >
-<div class="container"  >
-<div class="mobile container" >
-
-
-
-
-<div class="btn-group" role="group" aria-label="">
-
-    <div class="btn-group" role="group">
-        <a href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="secondary">
-         <i class="material-icons "
-         style=" color: rgb(42, 151, 153)">reorder</i>
-
-        </a>
-        <div class="dropdown-menu" aria-labelledby="dropdownId">
-            <a class="dropdown-item" href="#">item1</a>
-            <a class="dropdown-item" href="#">itme2</a>
-            <a class="dropdown-item" href="#">itme2</a>
-        </div>
-    </div>
-</div>
-<div class="site-mobile-menu-logo">
-    <img src="./img/logo1.png" alt="" srcset="">
-
-</div>
-</div>
-
-<div class="row">
-                <!-- LOGO -->
-                <div class="col-md-3">
-                    <div class="header-logo">
-                        <a href="#" class="logo1">
-                            <img src="./img/logo1.png" alt="">
-                        </a>
-                    </div>
-
-                </div>
-
-                <!-- /LOGO -->
-
-                <!-- SEARCH BAR -->
-              <div class="search-btn">
-
-
-                               <form class="navbar-form">
-              <div class="input-group">
-                <input type="text" value="" class="form-control" placeholder="Search...">
-                <button type="submit" class="btn btn-white btn-round btn-just-icon">
-                  <i class="material-icons " style="color: white">search</i>
-                  <div class="ripple-container"></div>
-                </button>
-              </div>
-            </form>
-              </div>
-
-                <!-- /SEARCH BAR -->
-                 <!-- ACCOUNT -->
-         <div class="col-md-3 myadd clearfix">
-
-
-        <div class="container-15">
-                <div class="flexiblebox-1">
-             <div class="header-ctn">
-
-                    <div class="wish">
-                            <a href="#">
-                                <i class="fa fa-heart-o"></i>
-                                <span  >Your Wishlist</span>
-                                <div class="qty" style=" background-color: rgb(42, 151, 153)">2</div>
-                            </a>
-                        </div>
-                        </div>
-
-        </div>
-        <div class="flexiblebox-2">
-             <div class="header-ctn">
-
-             <div class="dropdown">
-                <a   href="cart.php" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true" id="cart">
-                <i class="material-icons" style=" color: white">add_shopping_cart</i>
-                    <span style=" color: white">Your Cart</span>
-                        <div class="qty" style=" background-color: rgb(42, 151, 153)">3</div></a></div></div>
-                        </div>
-
-        <div class="flexiblebox-3">
-             <div class="header-ctn">
-                <div class="dropdown coin">
-                <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true" id="cart">
-                <i class="material-icons" style=" color: white">donut_small</i>
-                    <span style=" color: white">ttgcoin</span>
-                        <div class="qty" style=" background-color: rgb(42, 151, 153)">123</div></a></div></div>
-                        </div>
-
-        </div>
-      </div>
-        </div>
-
-
-
-</div>
-</div>
-
-
-
-</div>
+            <?php include_once 'main_nav.php'; 
+                    get_nav('hi'); ?>
 <div class="navbar" style=" background-image: url(img/bg.PNG); margin-top: -18px"></div>
+      
+                            <!-- end of scroll advertisment -->
+
+        <!-- navbar-->      
+  
+        <!-- displays search product -->
+
+        <div class="searchdrop">
+          
+        </div>
 
 
         <!-- navbar-->
-         <nav class="site-header sticky-top py-1 bootstrap-nav ">
+        <nav class="site-header sticky-top py-1 bootstrap-nav ">
       <div class="container d-flex flex-column flex-md-row justify-content-between">
-           <a class="py-2" href="index.php">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mx-auto"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
-        </a>
+          <img class="imgmenuxx" src="img/menu.png">
+          <img class="imgmenuxxx" id="closex" src="img/cancel.png">
+
+         
+          <img class="midle1" src="img/logo1.png" alt="" srcset="">
+         
+          <!-- <img class="logogxx" src="./img/menu2.png" alt=""> -->
 
 
-        <a class="py-2 d-none d-md-inline-block" href="product.php">Products</a>
+        <a class="py-2 d-none d-md-inline-block" href="product">Products</a>
         <a class="py-2 d-none d-md-inline-block" href="#">Tuaguagye</a>
         <a class="py-2 d-none d-md-inline-block" href="#">Catergories</a>
         <a class="py-2 d-none d-md-inline-block" href="#">others</a>
         <a class="py-2 d-none d-md-inline-block" href="#">Support</a>
 
+    
 
-    </nav>
+</nav>
 
     <!-- Header End -->
     <!-- Header End -->
@@ -393,7 +307,7 @@ Class recently_viewed {
 
     <!-- Product Shop Section Begin -->
 
-      <section class="section-name padding-y-sm" style="margin-top: 20px;">
+      <section class="section-name padding-y-sm hero-section" style="margin-top: 20px;">
     <div class="container">
 
     <header class="section-heading">

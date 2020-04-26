@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/embedded.css" type="text/css">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 </head>
 
@@ -65,52 +66,29 @@
             </div>
         </div>
            
-        <div class="nav-item">
-            <div class="container">
-                <div class="nav-depart">
-                    <div class="depart-btn">
-                        <i class="ti-menu"></i>
-                        <span>All departments</span>
-                        <ul class="depart-hover">
-                            <li class="active"><a href="#">Women’s Clothing</a></li>
-                            <li><a href="#">Men’s Clothing</a></li>
-                            <li><a href="#">Underwear</a></li>
-                            <li><a href="#">Kid's Clothing</a></li>
-                            <li><a href="#">Brand Fashion</a></li>
-                            <li><a href="#">Accessories/Shoes</a></li>
-                            <li><a href="#">Luxury Brands</a></li>
-                            <li><a href="#">Brand Outdoor Apparel</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <nav class="nav-menu mobile-menu">
-                    <ul>
-                        <li><a href="./home.html">Home</a></li>
-                        <li><a href="./shop.html">Shop</a></li>
-                        <li><a href="#">Collection</a>
-                            <ul class="dropdown">
-                                <li><a href="#">Men's</a></li>
-                                <li><a href="#">Women's</a></li>
-                                <li><a href="#">Kid's</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="./blog.html">Blog</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
-                        <li><a href="#">Pages</a>
-                            <ul class="dropdown">
-                                <li><a href="./blog-details.html">Blog Details</a></li>
-                                <li><a href="./shopping-cart.html">Shopping Cart</a></li>
-                                <li><a href="./check-out.html">Checkout</a></li>
-                                <li><a href="./faq.html">Faq</a></li>
-                                <li><a href="./register.html">Register</a></li>
-                                <li><a href="./login.html">Login</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-                <div id="mobile-menu-wrap"></div>
-            </div>
-        </div>
+        <!-- put the items here  -->
+        
+<nav class="site-header sticky-top py-1 bootstrap-nav ">
+      <div class="container d-flex flex-column flex-md-row justify-content-between">
+          <img class="imgmenuxx" src="img/menu.png">
+          <img class="imgmenuxxx" id="closex" src="img/cancel.png">
+
+         
+          <img class="midle1" src="img/logo1.png" alt="" srcset="">
+         
+          <!-- <img class="logogxx" src="./img/menu2.png" alt=""> -->
+
+
+        <a class="py-2 d-none d-md-inline-block" href="product">Products</a>
+        <a class="py-2 d-none d-md-inline-block" href="#">Tuaguagye</a>
+        <a class="py-2 d-none d-md-inline-block" href="#">Catergories</a>
+        <a class="py-2 d-none d-md-inline-block" href="#">others</a>
+        <a class="py-2 d-none d-md-inline-block" href="#">Support</a>
+
+    
+
+</nav>
+
     </header>
     <!-- Header End -->
 
@@ -133,7 +111,7 @@
     <!-- Shopping Cart Section Begin -->
     <section class="checkout-section spad">
         <div class="container">
-            <form action="#" class="checkout-form">
+            <form id="checkform" action="#" meethod="post" class="checkout-form">
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="checkout-content">
@@ -204,23 +182,26 @@
                                     
                                 </ul>
                                 <div class="payment-check">
+
+                                <div class="titlep"><p id="paytxt">Payment</p></div>
+                                     <br>
                                     <div class="pc-item">
                                         <label for="pc-check">
-                                            Cheque Payment
+                                        Pay on delivery 
                                             <input type="checkbox" id="pc-check">
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
                                     <div class="pc-item">
                                         <label for="pc-paypal">
-                                            Paypal
+                                            Pay with Mobile Money
                                             <input type="checkbox" id="pc-paypal">
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
                                 </div>
                                 <div class="order-btn">
-                                    <button type="submit" class="site-btn place-btn">Place Order</button>
+                                    <button type="submit" id="submitch" class="site-btn place-btn">Place Order</button>
                                 </div>
                             </div>
                         </div>
