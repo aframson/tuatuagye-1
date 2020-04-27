@@ -147,7 +147,7 @@
         $(function () {
                 var mesaage = "hello world";
                
-                       function appendBanner() {
+                       function appendBanner(var message) {
      
         $("body").addClass("purchase-banner-active");
         $("body").prepend('\

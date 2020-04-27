@@ -1,64 +1,33 @@
 <?php
 /***************************
-      product page
+      cart file
       ***********************************/
 
-//start session to get user info
-//its very likey at this point the user has already visited home and started a session
-session_start();
-if (empty($_SESSION['username'])){
-    $_SESSION['username'] = $_SERVER['REMOTE_ADDR'];
-}
-$dbhost = 'localhost';
-$dbuser = 'root';
-$dbpass = '';
-$dbname="tuatua";
-$connect  = mysqli_connect($dbhost, $dbuser, $dbpass,$dbname);
 
-// Check connection
-if ($connect->connect_error) {
-    die("Connection failed: " . $connect->connect_error);
-}
-
-//this will be continued later tonight after i work on the user auth
-Class recently_viewed {
-
-        public  $cart_list = array();
+            /***************************************
+         *  this's phpcode
+         ***********************************/
+        // include database and object files
+        include './Source/resources/config/db.php';
+        include_once './Source/resources/products/product1.php';
 
 
-        public function __construct($user){
-        $this->user = $user;
+        // get database connection
+        $database = new Database();
+       $db = $database->getConnection();
+        
+        // prepare product object
+        $product = new Product($db);  
+      
+      
+        // query products
+        $stmt = $product->read();
+        $num = $stmt->rowCount();
+        $product_arr = '';
+        
+         $connect = mysqli_connect("localhost", "root", "", "api_db");
 
-    }
-
-      function user(){
-
-        $user = $_SESSION['username'];
-
-    }
-    
-
-
-
-
-    function cart_list()
-    {
-        array_push($cart_list, $this->item);   
-    }
-
-
-}
-
- /* 
-    $connect = mysqli_connect("localhost", "vxkgn0fmfww", ">##e(a}T%5P", "TuaTuaGye Data");
-    if (mysqli_connect_errno())
-  {
-  echo "Failed to connect to MySQL: " . mysqli_connect_error();
-  }
-
-  */
-  
-  $record_per_page = 70;
+    $record_per_page = 70;
     $page = '';
     $output = '';
 
@@ -86,29 +55,70 @@ Class recently_viewed {
 <html lang="eng">
 
 <head>
-        <?php include_once 'header.php';  
-        get_title('products');
-        ?>
+    <meta charset="UTF-8">
+    <meta name="description" content="Tuatuagye">
+    <meta name="keywords" content="Tuatuagye, BRICH, webapp, javascript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tuatuagye | online store</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/electro.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/themify-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">  
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+  <link href="css/material-dashboard.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/materialdemo.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/embedded.css" type="text/css">
+
+         <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PY66NSKPP7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PY66NSKPP7');
+  function openForm() {
+      document.getElementById("thebutton").style.display ="none";
+document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+
+  document.getElementById("myForm").style.display = "none";
+  document.getElementById("thebutton").style.display ="block";
+  document.getElementById("1_ModalCenter").style.display ="none";
+
+
+}
+
+</script>
 </head>
 
 <body>
     <!-- Page Preloder -->
-    <!-- Page Preloder -->
-
-    <div class="menustick">
-        <ul class="ul">
-            
-            <li class="li"><a class="a" href="#">Your Cart</a></li>
-            <li class="li"><a class="a" href="#">Your wishlist</a></li>
-            <li class="li"><a class="a" href="#">ttgCoin</a></li>
-            <li class="li"><a class="a" href="#">Products</a></li>
-            <li class="li"><a class="a" href="#">Tuaguagye</a></li>
-            <li class="li"><a class="a" href="#">Catergories</a></li>
-            <li class="li"><a class="a" href="#">others</a></li>
-            <li class="li"><a class="a" href="#">Support</a></li>
-        </ul>
+    <div id="preloder">
+        <div class="loader"></div>
     </div>
-   
+    <div class="google index" style="display:none">
+<p>
+    Welcome to Tuatuagye, your one stop online store. Shop items and pay in installment.
+    Sign in to <a href="#">Tuatuagye</a> Buy phones, 44" digital TV, freezer, blender, kettle etc.
+</p>
+
+
+</div>
 
 <link href="//i.alicdn.com/ae-header/20191217202516/buyer/glofront/ae-header.css" rel="stylesheet" type="text/css" />
 <div class="site-download-header" data-spm="100067" id="j-site-download-header" style="display:none;"><a href="#"><img data-src="#" /></a></div>
@@ -173,7 +183,7 @@ Class recently_viewed {
 
 							<p class="flyout-sign-out" data-role="signout-btn"><a href="#" rel="nofollow">Sign Out</a></p>
 
-							<p class="flyout-bottons"><a class="join-btn" data-role="join-link" href="javaScript:;" rel="nofollow" style=" background: rgb(42, 151, 153);">Join</a> <a class="sign-btn" data-role="sign-link" href="#" rel="nofollow" style="margin:0;" style=" background: rgb(42, 151, 153);">Sign in</a></p>
+							<p class="flyout-bottons"><a class="join-btn" data-role="join-link" href="javaScript:;" rel="nofollow" style=" background-color: rgb(42, 151, 153);">Join</a> <a class="sign-btn" data-role="sign-link" href="#" rel="nofollow" style="margin:0;" style=" background-color: rgb(42, 151, 153);">Sign in</a></p>
 						</div>
 						<i class="flyout-line">&nbsp;</i>
 						<ul class="flyout-quick-entry" data-role="quick-entry">
@@ -232,10 +242,10 @@ Class recently_viewed {
   <div class="chatpane">
 
 
-<button class="open-button" id="thebutton"  data-toggle="modal" data-target="#1_ModalCenter" onclick="openForm()" style="display:none">Chat</button>
+<button class="open-button" id="thebutton"  data-toggle="modal" data-target="#1_ModalCenter" onclick="openForm()">Chat</button>
 
 <div class="chat-popup" id="myForm" style="background-image:url(img/bg.png)">
-  <form action="" id="chatmessage" class="form-container" style="background-image:url(img/bg.PNG)">
+  <form action="" id="chatmessage" class="form-container" style="background-image:url(img/bg.png)">
     <h3>Hello</h3>
 
     <label for="msg"><b>How may I assist you?</b></label>
@@ -249,42 +259,133 @@ Class recently_viewed {
 <div class="modal fade" id="1_ModalCenter" tabindex="-1" role="dialog" aria-labelledby="1_ModalCenterTitle" aria-hidden="true">
 </div>
 
-            <?php include_once 'main_nav.php'; 
-                    get_nav('hi'); ?>
-<div class="navbar" style=" background-image: url(img/bg.PNG); margin-top: -18px"></div>
-      
-                            <!-- end of scroll advertisment -->
+<div class="add-to-cart">
+ <!--top header navbar-->
+<div class="header d-flex"  style=" background-image: url(img/bg.PNG); " >
+<div class="container"  >
+<div class="mobile container" >
 
-        <!-- navbar-->      
-  
-        <!-- displays search product -->
 
-        <div class="searchdrop">
-          
+
+
+<div class="btn-group" role="group" aria-label="">
+
+    <div class="btn-group" role="group">
+        <a href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="secondary">
+         <i class="material-icons "
+         style=" color: rgb(42, 151, 153)">reorder</i>
+
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdownId">
+            <a class="dropdown-item" href="#">item1</a>
+            <a class="dropdown-item" href="#">itme2</a>
+            <a class="dropdown-item" href="#">itme2</a>
+        </div>
+    </div>
+</div>
+<div class="site-mobile-menu-logo">
+    <img src="./img/logo1.png" alt="" srcset="">
+
+</div>
+</div>
+
+<div class="row">
+                <!-- LOGO -->
+                <div class="col-md-3">
+                    <div class="header-logo">
+                        <a href="#" class="logo1">
+                            <img src="./img/logo1.png" alt="">
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- /LOGO -->
+
+                <!-- SEARCH BAR -->
+              <div class="search-btn">
+
+
+                               <form class="navbar-form">
+              <div class="input-group">
+                <input type="text" value="" class="form-control" placeholder="Search...">
+                <button type="submit" class="btn btn-white btn-round btn-just-icon">
+                  <i class="material-icons " style="color: white">search</i>
+                  <div class="ripple-container"></div>
+                </button>
+              </div>
+            </form>
+              </div>
+
+                <!-- /SEARCH BAR -->
+                 <!-- ACCOUNT -->
+         <div class="col-md-3 myadd clearfix">
+
+
+        <div class="container-15">
+                <div class="flexiblebox-1">
+             <div class="header-ctn">
+
+                    <div class="wish">
+                            <a href="#">
+                                <i class="fa fa-heart-o"></i>
+                                <span  >Your Wishlist</span>
+                                <div class="qty" style=" background-color: rgb(42, 151, 153)">2</div>
+                            </a>
+                        </div>
+                        </div>
+
+        </div>
+        <div class="flexiblebox-2">
+             <div class="header-ctn">
+
+             <div class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true" id="cart">
+                <i class="material-icons" style=" color: white">add_shopping_cart</i>
+                    <span style=" color: white">Your Cart</span>
+                        <div class="qty" style=" background-color: rgb(42, 151, 153)">3</div></a></div></div>
+                        </div>
+
+        <div class="flexiblebox-3">
+             <div class="header-ctn">
+                <div class="dropdown coin">
+                <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true" id="cart">
+                <i class="material-icons" style=" color: white">donut_small</i>
+                    <span style=" color: white">ttgcoin</span>
+                        <div class="qty" style=" background-color: rgb(42, 151, 153)">123</div></a></div></div>
+                        </div>
+
+        </div>
+      </div>
         </div>
 
 
+
+</div>
+</div>
+
+
+
+</div>
+<div class="navbar" style=" background-image: url(img/bg.PNG); margin-top: -18px"></div>
+
+
         <!-- navbar-->
-        <nav class="site-header sticky-top py-1 bootstrap-nav ">
+         <nav class="site-header sticky-top py-1 bootstrap-nav ">
       <div class="container d-flex flex-column flex-md-row justify-content-between">
-          <img class="imgmenuxx" src="img/menu.png">
-          <img class="imgmenuxxx" id="closex" src="img/cancel.png">
-
-         
-          <img class="midle1" src="img/logo1.png" alt="" srcset="">
-         
-          <!-- <img class="logogxx" src="./img/menu2.png" alt=""> -->
+           <a class="py-2" href="index.html">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mx-auto"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
+        </a>
 
 
-        <a class="py-2 d-none d-md-inline-block" href="product">Products</a>
+        <a class="py-2 d-none d-md-inline-block" href="product.html">Products</a>
         <a class="py-2 d-none d-md-inline-block" href="#">Tuaguagye</a>
         <a class="py-2 d-none d-md-inline-block" href="#">Catergories</a>
         <a class="py-2 d-none d-md-inline-block" href="#">others</a>
         <a class="py-2 d-none d-md-inline-block" href="#">Support</a>
 
-    
 
-</nav>
+    </nav>
 
     <!-- Header End -->
     <!-- Header End -->
@@ -307,7 +408,7 @@ Class recently_viewed {
 
     <!-- Product Shop Section Begin -->
 
-      <section class="section-name padding-y-sm hero-section" style="margin-top: 20px;">
+      <section class="section-name padding-y-sm" style="margin-top: 20px;">
     <div class="container">
 
     <header class="section-heading">
@@ -317,45 +418,35 @@ Class recently_viewed {
     <div class="row">
 
     
-   
-
     <?php
 
-      $query = "SELECT * FROM ttg_product ORDER BY product_id ";
+      $query = "SELECT * FROM products ORDER BY id ";
     $result = mysqli_query($connect, $query);
-    if (!$result) {
-   echo mysqli_error($connect) ;
-   // exit();
-}
      while ($row = mysqli_fetch_array($result)) {
     $output .= ' 
-   
-                    <div class="product-item">
-                        <div class="pi-pic">
-                          <img src="http://tuatuagye.brichghana.com/upload/image/'.$row["image"].'" alt="">
+      <div class="product-item">
+                            <div class="pi-pic">
+                            <img src=" '.$row["image"].'.jpg" alt="">
                             <div class="icon">
-                                <i class="icon_heart_alt"></i>
+                                    <i class="icon_heart_alt"></i>
+                                </div>
+                                    <ul>
+                                    <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
+                                    <li class="quick-view"><a href="product.html">Buy</a></li>
+                                    <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
+                                </ul>
                             </div>
-                            <ul>
-                                <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                <li class="quick-view"><a href="#" class="buy-item" id ="'.$row['product_id'].'">Buy</a></li>
-                                <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="pi-text">
-                              <h5>'. $row["model"]. '</h5>
-                            
-                            <a href="#">
-                        
-                 
-                              <div class="catagory-name"><h7>category name</h7></div>
-                            </a>
-                            <div class="product-price">
-                             Ghc '. $row["price"]. '
+                            <div class="pi-text">
+                                <div class="catagory-name">category</div>
+                                <a href="#">
+                                    <h5>'. $row["name"]. '</h5>
+                                </a>
+                                <div class="product-price">
+                                    Ghc '. $row["price"]. '
+                                </div>
                             </div>
                         </div>
-                    </div>
-                 ';
+                                  ';
         // check if more than 0 record found
        
 	 }
@@ -562,8 +653,6 @@ Class recently_viewed {
         </div>
   
     </footer>
-    <link rel="stylesheet" href="css/embedded.css" type="text/css">
-
     <!-- Footer Section End -->
 
 
@@ -578,48 +667,37 @@ Class recently_viewed {
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="store.js"></script>
 
 
-
-   <script>
+    <script>
                 /************************************************/
                                 //#get product id
-               /************************************************/
+                /************************************************/
     $(function () {
+            
+    
+         
+            var page = "ready";
+             /* $.ajax({
+                         url: "./product/product.php?id=",
+                         method: "POST",
+                         data: { page: page },
+                success: function (data, textStatus, jqXHR) {
+                        /* $('').html(data);  *
+                                   $('.addtocart').after(data);                   
+                            },
 
-                        $('a.buy-item').click(function (e) { 
-                            e.preventDefault();
-                                 var id = $(this).attr('id') ;
-                                 
-                            <?php
+                     error: function (jqXHR, textStatus, errorThrown) {
+                                    console.log(errorThrown);
 
-                            echo '
-                             //  alert("'.$_SESSION["username"].'");
-                             ';
-
-                             /*
-                             $recently_viewed = new recently_viewed($user);      
-                             $recently_viewed->$cart_list = $id;
-                             $recently_viewed->$cart_list();
-
-
-                            
-                             if (empty($cart_list)){
-                                //code
-                             }
-                             else{
-
-                             }
-                            */
-                             ?>
-    window.location = "./cart.php?product_id= "+ id;
-
+                                }
+                            })
                                
-                         
+                        */    
                             console.log("thi is my first official after(data) try")
                                 });
-
-          });
+         
                             </script>
 </body>
 
