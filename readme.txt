@@ -15,3 +15,8 @@ ecommernce experience cuz of me, i owe God that */
  //so login -google sign in with the google api and hubtel forget password reset for the forget password button
 
  //may God help me 
+
+ //i want to connect with product.php and which im currrently changing the
+ name to engine.php, the goal is to have all my functions in one file so i can make calls to it
+ with a route link and post my reponse via ajax back 
+ but i seem to be getting some wierd error 

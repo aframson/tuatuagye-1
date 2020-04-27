@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
+  <!-- meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Tuatuagye | register</title>
@@ -36,7 +36,7 @@
               <form action="#" id="ttg_register">
                 <div class="form-group">
                   <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Username" required>
+                    <input type="text" class="form-control" placeholder="Username" name="user_">
                     <div class="input-group-append">
                       <span class="input-group-text">
                         <i class="mdi mdi-check-circle-outline"></i>
@@ -46,7 +46,7 @@
                 </div>
                 <div class="form-group">
                   <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Firstname" required>
+                    <input type="text" class="form-control" placeholder="Firstname" name="firstname_">
                     <div class="input-group-append">
                       <span class="input-group-text">
                         <i class="mdi mdi-check-circle-outline"></i>
@@ -56,7 +56,7 @@
                 </div>
                 <div class="form-group">
                   <div class="input-group">
-                    <input type="text" class="form-control" placeholder="lastname" required>
+                    <input type="text" class="form-control" placeholder="lastname" name="lastname_">
                     <div class="input-group-append">
                       <span class="input-group-text">
                         <i class="mdi mdi-check-circle-outline"></i>
@@ -66,7 +66,7 @@
                 </div>
                 <div class="form-group">
                   <div class="input-group">
-                    <input type="text" class="form-control" placeholder="phone" required>
+                    <input type="text" class="form-control" placeholder="phone" name="phone_">
                     <div class="input-group-append">
                       <span class="input-group-text">
                         <i class="mdi mdi-check-circle-outline"></i>
@@ -76,7 +76,7 @@
                 </div>
                 <div class="form-group">
                   <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Email" required>
+                    <input type="text" class="form-control" placeholder="Email" name="email_">
                     <div class="input-group-append">
                       <span class="input-group-text">
                         <i class="mdi mdi-check-circle-outline"></i>
@@ -86,7 +86,7 @@
                 </div>
                 <div class="form-group">
                   <div class="input-group">
-                    <input type="password" class="form-control" placeholder="Password" required>
+                    <input type="password" class="form-control" placeholder="Password" name="pass_">
                     <div class="input-group-append">
                       <span class="input-group-text">
                         <i class="mdi mdi-check-circle-outline"></i>
@@ -96,7 +96,7 @@
                 </div>
                 <div class="form-group">
                   <div class="input-group">
-                    <input type="password" class="form-control" placeholder="Confirm Password" required>
+                    <input type="password" class="form-control" placeholder="Confirm Password" name="confirm_pass">
                     <div class="input-group-append">
                       <span class="input-group-text">
                         <i class="mdi mdi-check-circle-outline"></i>
@@ -107,11 +107,12 @@
                 <div class="form-group d-flex justify-content-center">
                   <div class="form-check form-check-flat mt-0">
                     <label class="form-check-label">
-                      <input type="checkbox" class="form-check-input" required> I agree to the terms </label>
+                      <input type="checkbox" class="form-check-input" id="term_"> I agree to the terms </label>
                   </div>
                 </div>
                 <div class="form-group">
-                  <button class="btn btn-primary submit-btn btn-block">Register</button>
+                  <button class="btn btn-primary submit-btn btn-block  "
+                    <?php echo 'id="registerme" ' ; ?>>Register</button>
                 </div>
                 <div class="text-block text-center my-3">
                   <span class="text-small font-weight-semibold">Already have and account ?</span>
@@ -149,47 +150,59 @@
   <script src="./assets/js/shared/misc.js"></script>
   <!-- endinject -->
   <script>
-    $(function() {
+    $(function () {
 
-         appendBanner("dynamic unconditional");
-          
+      $('#registerme').click(function (e) {
+        e.preventDefault();
+        alert($('#ttg_register').serialize());
 
-      $.ajax({
-        type: "POST",
-        url: "product.php",
-        data: "data",
-        dataType: "dataType",
-        success: function (response) {
-          
-        }
+
+//ttg2\Source\resources\products\engine.php
+
+
+        $.ajax({  
+          type: "POST",
+          url: "../Source/resources/config/route?func=ttg_register",
+          data: $('#ttg_register').serialize(),
+          dataType: "text",
+          success: function (data, textStatus, jqXHR) {
+            console.log(data);
+           appendBanner(data);
+            // $('div .ttg_price_').after(data);
+
+          },
+          error: function (jqXHR, textStatus, errorThrown) {
+            console.log(errorThrown);
+
+          }
+        });
+
+
+
       });
 
 
 
 
 
+      /*************************** */
+      //definition
+      /*************************** */
+      function appendBanner(hello) {
 
-
-
-
-        /*************************** */
-            //definition
-        /*************************** */
-        function appendBanner(hello) {
-     
         $("body").addClass("purchase-banner-active");
         $("body").prepend('\
           <div class= "item-purchase-banner">\
-            <p class="text" > <h3 style="color:  rgb(42, 151, 153); " align ="center"> '+hello+'</h3></p>\
+            <p class="text" > <h3 style="color:  rgb(42, 151, 153); " align ="center"> ' + hello + '</h3></p>\
             </div>\
         ')
-          setTimeout(function(){
+        setTimeout(function () {
           $(".item-purchase-banner").slideUp(300);
           $("body").removeClass("purchase-banner-active");
           localStorage.setItem('bannerState', "disabled");
-     },5000);
-      
-    }
+        }, 5000);
+
+      }
     });
   </script>
 

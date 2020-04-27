@@ -221,12 +221,8 @@ else echo "the product id didn't come";
  **************/
 
 function ttg_login(){
-$dbhost = 'localhost';
-$dbuser = 'vxkgn0fmfwww';
-$dbpass = '>##e(a}T%5P';
-$dbname="TuaTuaGye Data";
-$connect  = mysqli_connect($dbhost, $dbuser, $dbpass,$dbname);
 
+include './config/db.php';
 
  $user  = $_POST['username']   ;
  $paswword  = $_POST['password']   ;
@@ -249,3 +245,44 @@ $query = "SELECT * FROM oc_user WHERE username = $user";
 }
                 echo 1;
 }
+
+
+function ttg_register(){
+include '../config/db.php';
+$connect  = mysqli_connect($dbhost, $dbuser, $dbpass,$dbname);
+
+
+ $user  = mysqli_real_escape_string($connect, $_POST['user_'])   ; 
+ echo $user; /*
+ $paswword  = $_POST['pass_']   ;
+ $lastname  = $_POST['lastname_']   ;
+ $phone  = $_POST['phone_']   ;
+ $email  = $_POST['email_']   ;
+ $confirm_pass  = $_POST['confirm_pass']   ;
+ $terms  = $_POST['terms_']   ;
+
+ if (!empty($user)){
+     $isValid = true;
+     $query = "SELECT * FROM ttg_user WHERE username = $user";
+               $result = mysqli_query($connect, $query);
+                    if (!$result) {
+                   echo '<script> console.log('.mysqli_error($connect).');</script>';    // exit();
+                }
+                else { $row = mysqli_fetch_array($result);
+                    echo "username" . $row['username'] . "already exist";
+                        $isValid = false;
+                     }
+            while($isValid){
+                 $query = "INSERT INTO ttg_user username = $user";
+                 $result = mysqli_query($connect, $query);
+                       if (!$result) {
+                   echo '<script> console.log('.mysqli_error($connect).');</script>';    // exit();
+                }
+                echo "successful";
+            }
+ }
+*/
+    
+}
+
+
