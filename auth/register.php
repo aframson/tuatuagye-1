@@ -36,7 +36,7 @@
               <form action="#" id="ttg_register">
                 <div class="form-group">
                   <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Username" name="user_">
+                    <input type="text" class="form-control" placeholder="Username" name="user_" required>
                     <div class="input-group-append">
                       <span class="input-group-text">
                         <i class="mdi mdi-check-circle-outline"></i>
@@ -46,7 +46,7 @@
                 </div>
                 <div class="form-group">
                   <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Firstname" name="firstname_">
+                    <input type="text" class="form-control" placeholder="Firstname" name="firstname_" required>
                     <div class="input-group-append">
                       <span class="input-group-text">
                         <i class="mdi mdi-check-circle-outline"></i>
@@ -56,7 +56,7 @@
                 </div>
                 <div class="form-group">
                   <div class="input-group">
-                    <input type="text" class="form-control" placeholder="lastname" name="lastname_">
+                    <input type="text" class="form-control" placeholder="lastname" name="lastname_" required>
                     <div class="input-group-append">
                       <span class="input-group-text">
                         <i class="mdi mdi-check-circle-outline"></i>
@@ -66,7 +66,7 @@
                 </div>
                 <div class="form-group">
                   <div class="input-group">
-                    <input type="text" class="form-control" placeholder="phone" name="phone_">
+                    <input type="text" class="form-control" placeholder="phone" name="phone_" required>
                     <div class="input-group-append">
                       <span class="input-group-text">
                         <i class="mdi mdi-check-circle-outline"></i>
@@ -76,7 +76,7 @@
                 </div>
                 <div class="form-group">
                   <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Email" name="email_">
+                    <input type="text" class="form-control" placeholder="Email" name="email_" required>
                     <div class="input-group-append">
                       <span class="input-group-text">
                         <i class="mdi mdi-check-circle-outline"></i>
@@ -86,7 +86,7 @@
                 </div>
                 <div class="form-group">
                   <div class="input-group">
-                    <input type="password" class="form-control" placeholder="Password" name="pass_">
+                    <input type="password" class="form-control" placeholder="Password" name="pass_" required> 
                     <div class="input-group-append">
                       <span class="input-group-text">
                         <i class="mdi mdi-check-circle-outline"></i>
@@ -96,7 +96,7 @@
                 </div>
                 <div class="form-group">
                   <div class="input-group">
-                    <input type="password" class="form-control" placeholder="Confirm Password" name="confirm_pass">
+                    <input type="password" class="form-control" placeholder="Confirm Password" name="confirm_pass" required>
                     <div class="input-group-append">
                       <span class="input-group-text">
                         <i class="mdi mdi-check-circle-outline"></i>
@@ -135,6 +135,9 @@
       align-content: flex-start;
 
     }
+    .item-purchase-banner h3{
+      font-family: monospace;
+    }
 
     .bg-img {
       background: url("../img/tablet.jpg") center center no-repeat;
@@ -154,11 +157,6 @@
 
       $('#registerme').click(function (e) {
         e.preventDefault();
-        alert($('#ttg_register').serialize());
-
-
-//ttg2\Source\resources\products\engine.php
-
 
         $.ajax({  
           type: "POST",
@@ -173,7 +171,6 @@
           },
           error: function (jqXHR, textStatus, errorThrown) {
             console.log(errorThrown);
-
           }
         });
 
@@ -196,11 +193,11 @@
             <p class="text" > <h3 style="color:  rgb(42, 151, 153); " align ="center"> ' + hello + '</h3></p>\
             </div>\
         ')
-        setTimeout(function () {
+        setTimeout(function (){
           $(".item-purchase-banner").slideUp(300);
           $("body").removeClass("purchase-banner-active");
           localStorage.setItem('bannerState', "disabled");
-        }, 5000);
+         }, 4000);
 
       }
     });

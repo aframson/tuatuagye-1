@@ -252,37 +252,73 @@ include '../config/db.php';
 $connect  = mysqli_connect($dbhost, $dbuser, $dbpass,$dbname);
 
 
- $user  = mysqli_real_escape_string($connect, $_POST['user_'])   ; 
- echo $user; /*
- $paswword  = $_POST['pass_']   ;
- $lastname  = $_POST['lastname_']   ;
- $phone  = $_POST['phone_']   ;
- $email  = $_POST['email_']   ;
- $confirm_pass  = $_POST['confirm_pass']   ;
- $terms  = $_POST['terms_']   ;
+ /*$terms  = $_POST['terms_']   ;  */
+       $user= htmlspecialchars(strip_tags($_POST['user_'] ));
+       $fname= htmlspecialchars(strip_tags($_POST['firstname_'] ));
+       $lname= htmlspecialchars(strip_tags($_POST['lastname_'] ));
+       $phone= htmlspecialchars(strip_tags($_POST['phone_'] ));
+       $email= htmlspecialchars(strip_tags($_POST['email_'] ));
+       $pasword= htmlspecialchars(strip_tags($_POST['pass_'] ));
+       $confirm_pass= htmlspecialchars(strip_tags($_POST['confirm_pass'] ));
 
- if (!empty($user)){
-     $isValid = true;
-     $query = "SELECT * FROM ttg_user WHERE username = $user";
-               $result = mysqli_query($connect, $query);
-                    if (!$result) {
-                   echo '<script> console.log('.mysqli_error($connect).');</script>';    // exit();
+        if(/*
+    !empty($fname) &&
+    !empty($lname) &&
+    !empty($email) &&
+    !empty($phone) &&
+    !empty($pasword) &&
+    !empty($confirm_pass) &&  */
+    !empty($user) 
+                ){
+            $stmt = $connect->prepare("SELECT username FROM ttg_user WHERE username=? ");
+           $stmt->bind_param("s", $user);       
+             if ($stmt->execute()) {
+    
+                       // echo "username already exist ";
+               
+                $row = $stmt->fetch();
+                    if ($user == $row['username']){
+                        echo "username already exist ";
+                    }
+                        else  echo $row['username']. "this users";
+                       
+                
+                                 }
+
+
                 }
-                else { $row = mysqli_fetch_array($result);
-                    echo "username" . $row['username'] . "already exist";
-                        $isValid = false;
-                     }
-            while($isValid){
-                 $query = "INSERT INTO ttg_user username = $user";
-                 $result = mysqli_query($connect, $query);
-                       if (!$result) {
-                   echo '<script> console.log('.mysqli_error($connect).');</script>';    // exit();
-                }
-                echo "successful";
-            }
- }
-*/
+
+                else echo "Please enter all the data";
+
     
 }
 
 
+/*always break code down to smaller components that way its easier to set them up and easy to debug if sth go wrong
+atm moment i'm tryna clean the registeration post so i don't get sql injections, the easier way to do that in php
+is to use prepared statement*/
+
+
+/*
+
+$user_name = $_POST['dname'];
+$user_password = $_POST['dpass'];
+// Prepare the query
+$stmt = $conn->prepare("SELECT user_name,user_password FROM login_details WHERE user_name=? and user_password= ?");
+// Bind parameters s - string, b - boolean, i - int, etc
+$stmt->bind_param("ss", $user_name, $user_password);
+// Execute SQL
+$stmt->execute();
+// Store result
+$stmt->store_result();
+// Bind the result
+$stmt->bind_result($name, $password);
+if ($stmt->num_rows == 1) {
+// Fetching data
+while ($row = $stmt->fetch()) {
+echo" <div class="output"> ";
+echo"<b>User name:</b>" . $name . "<br/>";
+echo "<b>Password:</b>" . $password;
+echo"</div>";
+}
+*/
